@@ -1,0 +1,116 @@
+@font-face {
+    font-weight: normal;
+    font-family: "FiraSans-Thin";
+    font-style: normal;
+    src: url("../fonts/FiraSans-Thin.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "FiraSans-Light"; 
+    src: url("../fonts/FiraSans-Light.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-family: "FiraSans-Regular";
+    font-style: normal;
+    src: url("../fonts/FiraSans-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "FiraSans-Bold"; 
+    src: url("../fonts/FiraSans-Bold.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "FiraSans-Italic"; 
+    src: url("../fonts/FiraSans-Italic.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "FiraSans-Medium"; 
+    src: url("../fonts/FiraSans-Medium.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "FiraSans-SemiBold"; 
+    src: url("../fonts/FiraSans-SemiBold.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "FiraSans-ExtraBold"; 
+    src: url("../fonts/FiraSans-ExtraBold.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "FiraSans-Black"; 
+    src: url("../fonts/FiraSans-Black.woff") format("woff");
+    font-display: swap;
+}
+
+html{
+    font-size: 14px;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     background-color: $bg-color;
+     color: $text-color;
+     font-family: $firasans;
+}
+
+
+*{
+    box-sizing:border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+.main-wrapper {
+    max-width: 1920px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+// .container-centered {
+//     width: 100%;
+//     max-width: 1220px;
+//     margin: 0 20px;
+// }

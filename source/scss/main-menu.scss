@@ -1,0 +1,24 @@
+.main-menu {
+    font-family: $firasans-medium;
+    font-size: 1.071em;
+}
+
+.main-menu__list {
+    @include list-norm;
+    display: flex;
+}
+
+.main-menu__item {
+    margin-right: 40px;
+}
+
+.main-menu__link {
+    color: $text-dark;
+    line-height: 2.7em;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $bg-color;
+    transition: all .25s ease-in;
+    &:hover {
+        border-bottom: 2px solid $hover;
+    }
+}

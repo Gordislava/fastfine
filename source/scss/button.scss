@@ -1,0 +1,21 @@
+.button{
+    // display: inline-block;
+    background-color: $accent;
+    font-family: $firasans-bold;
+    color: $text-dark;
+    border-radius: 20px;
+    padding: 11px 30px 13px;
+    border: none;
+    transition: all .25s ease-in;
+    &:hover,
+    &:active {
+        background-color: $input-wrong;
+        color: $bg-color;
+        box-shadow: inset 0px 3px 7px 0 rgba(0, 0, 0, 0.35);
+    }
+}
+
+.button--small {
+    min-width: 110px;
+    padding-left: 44px;
+}

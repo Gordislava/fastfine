@@ -1,0 +1,17 @@
+.social__list {
+  @include list-norm;
+  padding-top: 27px;
+  padding-bottom: 21px;
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.social__icon:hover {
+  fill: $accent;
+}
+
+.social__icon:active {
+  opacity: 0.3;
+}
