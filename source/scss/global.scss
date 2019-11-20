@@ -97,9 +97,13 @@ fieldset {
 }
 
 .main-wrapper {
+    width: 100%;
     max-width: 1920px;
     padding: 0;
     margin: 0 auto;
+    @media (max-width: 1920px) {
+        max-width: none;
+    }
 }
 
 .container {
@@ -107,6 +111,9 @@ fieldset {
     max-width: 1220px;
     padding: 0 20px;
     margin: auto;
+    @media (max-width: 1220px) {
+        max-width: none;
+    }
 }
 
 // .container-centered {
@@ -114,3 +121,13 @@ fieldset {
 //     max-width: 1220px;
 //     margin: 0 20px;
 // }
+
+.main {
+    width: 100%;
+    max-width: 1920px;
+    padding: 0;
+    margin: 0 auto;
+    @media (max-width: 1920px) {
+        max-width: none;
+    }
+}

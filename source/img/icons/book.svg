@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve" width="512px" height="512px" class="hovered-paths"><g><circle style="fill:#F4D75C" cx="248" cy="136" r="104" data-original="#FFA64D" class="" data-old_color="#FFA64D"/><g>
+	<rect x="64" y="352" style="fill:#030715" width="160" height="16" data-original="#333333" class="hovered-path active-path" data-old_color="#333333"/>
+	<rect x="64" y="320" style="fill:#030715" width="160" height="16" data-original="#333333" class="hovered-path active-path" data-old_color="#333333"/>
+	<rect x="64" y="384" style="fill:#030715" width="160" height="16" data-original="#333333" class="hovered-path active-path" data-old_color="#333333"/>
+	<rect x="208" y="416" style="fill:#030715" width="16" height="16" data-original="#333333" class="hovered-path active-path" data-old_color="#333333"/>
+	<rect x="64" y="416" style="fill:#030715" width="128" height="16" data-original="#333333" class="hovered-path active-path" data-old_color="#333333"/>
+	<rect x="352" y="160" style="fill:#030715" width="80" height="16" data-original="#333333" class="hovered-path active-path" data-old_color="#333333"/>
+	<rect x="336" y="192" style="fill:#030715" width="96" height="16" data-original="#333333" class="hovered-path active-path" data-old_color="#333333"/>
+	<rect x="416" y="224" style="fill:#030715" width="16" height="16" data-original="#333333" class="hovered-path active-path" data-old_color="#333333"/>
+	<rect x="336" y="224" style="fill:#030715" width="64" height="16" data-original="#333333" class="hovered-path active-path" data-old_color="#333333"/>
+	<path style="fill:#030715" d="M320,399.36V432h112V320h-53.48c-9.008-18.888-28.24-32-50.52-32c-30.872,0-56,25.128-56,56   C272,372.152,292.912,395.456,320,399.36z M368,344c0,19.312-13.768,35.472-32,39.192V336h31.192   C367.72,338.584,368,341.264,368,344z M416,336v80h-80v-16.64c27.088-3.904,48-27.208,48-55.36c0-2.72-0.264-5.376-0.64-8H416z    M328,304c13.016,0,24.488,6.344,31.792,16H320v63.192c-18.232-3.72-32-19.872-32-39.192C288,321.944,305.944,304,328,304z" data-original="#333333" class="hovered-path active-path" data-old_color="#333333"/>
+	<rect x="240" style="fill:#030715" width="16" height="32" data-original="#333333" class="hovered-path active-path" data-old_color="#333333"/>
+	
+		<rect x="180" y="16.086" transform="matrix(-0.866 0.5 -0.5 -0.866 366.8546 -34.1303)" style="fill:#030715" width="16" height="31.999" data-original="#333333" class="hovered-path active-path" data-old_color="#333333"/>
+	
+		<rect x="136.072" y="59.995" transform="matrix(-0.5 0.866 -0.866 -0.5 281.9225 -10.7762)" style="fill:#030715" width="16" height="31.999" data-original="#333333" class="hovered-path active-path" data-old_color="#333333"/>
+	
+		<rect x="335.933" y="68.008" transform="matrix(-0.8661 0.4999 -0.4999 -0.8661 694.7343 -34.0906)" style="fill:#030715" width="32" height="16" data-original="#333333" class="hovered-path active-path" data-old_color="#333333"/>
+	
+		<rect x="292.001" y="24.068" transform="matrix(-0.4999 0.8661 -0.8661 -0.4999 489.7435 -218.6572)" style="fill:#030715" width="32" height="16" data-original="#333333" class="hovered-path active-path" data-old_color="#333333"/>
+	<path style="fill:#030715" d="M464,144v-16H335.592C331.536,83.216,293.824,48,248,48s-83.536,35.216-87.592,80H32v16H0v352h496   V144H464z M192,203.776V224h-16v16h16v32h16v16H80V176h89.696C175.096,186.512,182.56,195.992,192,203.776z M208,256v-16h80v16H208   z M248,152c-8.824,0-16-7.176-16-16s7.176-16,16-16s16,7.176,16,16S256.824,152,248,152z M304,272v-32h16v-16h-16v-20.224   c18.312-15.096,29.464-36.4,31.56-59.776H448v304H256V272H304z M248,64c39.704,0,72,32.296,72,72   c0,22.768-10.504,43.728-28.816,57.504L288,195.896V224h-32v-57.136c13.768-3.576,24-15.992,24-30.864c0-17.648-14.352-32-32-32   s-32,14.352-32,32c0,14.872,10.232,27.288,24,30.864V224h-32v-28.104l-3.184-2.4C186.496,179.728,176,158.768,176,136   C176,96.296,208.296,64,248,64z M48,144h112.44c0.488,5.472,1.528,10.808,2.992,16H64v144h160v-32h16v176H48V144z M480,480H16V160   h16v304h432V160h16V480z" data-original="#333333" class="hovered-path active-path" data-old_color="#333333"/>
+</g></g> </svg>
