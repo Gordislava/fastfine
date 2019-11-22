@@ -11,6 +11,9 @@
     &:active {
         background-color: $input-wrong;
         color: $bg-color;
+        
+    }
+    &:active {
         box-shadow: inset 0px 3px 7px 0 rgba(0, 0, 0, 0.35);
     }
 }
@@ -18,4 +21,33 @@
 .button--small {
     min-width: 110px;
     padding-left: 44px;
+}
+
+.button--size-middle {
+    border-radius: 28px;
+    padding: 20px 65px;
+    &:hover {
+       background-color: $accent-dark;
+       color: $text-dark; 
+    }
+    &:active {
+        background-color: $accent-dark;
+        color: $text-dark;
+    }
+}
+
+.button--transparent {
+    border-radius: 25px;
+    background-color: transparent;
+    // border: solid 2px $accent;
+    box-shadow: inset 0 0 0 2px $accent;
+    color: $text-dark; 
+    &:hover {
+       background-color: $accent;
+       color: $text-dark;
+       
+    }
+    &:active {
+        background-color: $accent-dark;
+    }
 }

@@ -96,6 +96,19 @@ fieldset {
     padding: 0;
 }
 
+h5 {
+    font-size: 19px;
+    font-family: $firasans-bold;
+}
+
+.page-title {
+    font-size: 35px;
+    font-family: $firasans-bold;
+    @media (max-width: 768px) {
+        font-size: 19px;
+    }
+}
+
 .main-wrapper {
     width: 100%;
     max-width: 1920px;
@@ -116,12 +129,6 @@ fieldset {
     }
 }
 
-// .container-centered {
-//     width: 100%;
-//     max-width: 1220px;
-//     margin: 0 20px;
-// }
-
 .main {
     width: 100%;
     max-width: 1920px;
@@ -129,5 +136,28 @@ fieldset {
     margin: 0 auto;
     @media (max-width: 1920px) {
         max-width: none;
+    }
+}
+
+.container-grid {
+    width: 100%;
+    max-width: 1220px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+        justify-content: space-between;
+    }
+}
+
+.col-one-fourth {
+    width: 24%;
+    max-width: 280px;
+    @media (max-width: 768px) {
+        width: 49%;   
+    }
+    @media (max-width: 600px) {
+        width: 100%;   
     }
 }

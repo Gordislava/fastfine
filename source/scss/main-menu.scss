@@ -6,6 +6,7 @@
 .main-menu__list {
     @include list-norm;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .main-menu__item {

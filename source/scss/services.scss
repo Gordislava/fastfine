@@ -1,0 +1,149 @@
+.services {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.services__list {
+    @include list-norm;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.services__item {
+    margin-bottom: 55px;
+    padding-top: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 280px;
+    border-radius: 12px;
+    box-shadow: 0px 15px 54px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #ecedef;
+    position: relative;
+    width: 24%;
+    @media (max-width: 1024px) {
+        width: 31%;
+    }
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+    
+}
+
+
+
+.card__wrapper {
+    padding: 0 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.card__title {
+    font-size: 17px;
+    font-family: $firasans-bold;
+    padding: 16px 0;
+    margin: 0;
+    color: $text-dark;
+}
+
+.card__text-wrapper {
+    box-shadow: 0px 1px 0 0 #ecedef, inset 0px 1px 0 0 #ecedef;
+    width: 100%;
+    margin-bottom: 52px;
+    
+}
+
+.card__text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 13px;
+    line-height: 18px;
+    color: $text-gray;
+    padding: 14px 10px 8px;
+    p {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.card__text--term {
+    background-color: $opposite-lighter;
+    
+}
+
+.card__text--img {
+    position: relative;
+}
+
+.card__text--img::before {
+    @include pseudo;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: -25px;
+    background-image: url("../img/icons/calendar.svg");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    opacity: 0.5;
+}
+
+.card__text-important {
+        font-size: 19px;
+        line-height: 23px;
+        font-family: $firasans-bold;
+        color: $text-dark;
+    }
+
+.card__text-color {
+    color: $text-green;
+}
+
+.card__button {
+    display: inline-block;
+    position: absolute;
+    bottom: -30px;
+}
+
+.card__discount {
+    background-color: $bg-accent;
+    background-image: url("../img/discount.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    min-height: 325px;
+}
+
+.card__discount-text {
+    font-size: 19px;
+    line-height: 25px;
+    font-family: $firasans-bold;
+    color: $text-dark;
+    padding: 0 30px;
+    margin: 0;
+    text-align: center;
+}
+
+.card__discount-text--accent {
+    font-family: $firasans-black;
+    color: $accent-dark;
+    font-size: 23px;
+    line-height: 29px;
+    text-transform: uppercase;
+    span {
+        font-size: 15px;
+        line-height: 19px;
+    }
+}
