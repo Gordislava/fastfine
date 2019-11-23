@@ -20,7 +20,22 @@
 
 .button--small {
     min-width: 110px;
-    padding-left: 44px;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 768px) {
+        min-width: 265px
+    }
+}
+
+.button__icon-lock {
+    fill: rgba($color: $text-color, $alpha: 0.5);
+    text-align: center;
+    margin-right: 14px;
+    transition: all .25s ease-in;
+}
+
+.button--small:hover .button__icon-lock {
+    fill: rgba($color: $bg-color, $alpha: 0.5);  
 }
 
 .button--size-middle {

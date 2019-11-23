@@ -1,17 +1,41 @@
 .social {
   @include list-norm;
-  padding-top: 27px;
-  padding-bottom: 21px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: flex;
-  width: 55%;
+  width: 120px;
   justify-content: space-between;
   margin: 0 auto;
 }
 
-.social__icon:hover {
-  fill: $accent;
+.social__item {
+  background-color: $border-gray;
+  text-align: center;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  &:hover {
+    background-color: darken($color: $border-gray, $amount: 10);
+  }
+  
 }
 
-.social__icon:active {
-  opacity: 0.3;
+.social__icon {
+  fill: $opposite-dark;
+  height: 100%;
+  // transition: all .25s ease-in;
+  // &:hover {
+  //   fill: $bg-color;
+  // }
+
+}
+
+.social__icon--telegram {
+  margin-right: 3px;
+}
+
+
+.social__item:hover  .social__icon {
+  fill: darken($color: $opposite-dark, $amount: 20);
+  transition: all .25s ease-in;
 }
