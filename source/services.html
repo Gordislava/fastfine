@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <link rel="stylesheet" href="css/first-screen.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -255,44 +256,103 @@
                             </li>
                         </ul>
                     </section>
+
                     <section class="pagination pagination--position-end">
-                        <ul class="pagination__list">
-                            <li class="pagination__item pagination__item--type-arrow pagination__item--type-arrow-left"><a href="#"
-                                    class="pagination__link"><span class="visually-hidden">Вперед</span></a></li>
-                            <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
-                            <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
-                            <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
-                            <li class="pagination__item pagination__item--type-arrow pagination__item--type-arrow-right"><a href="#"
-                                    class="pagination__link"><span class="visually-hidden">Вперед</span></a></li>
-                        </ul>
+                        <div class="pagination__list">
+                            <div class="arrow-left pagination__item pagination__item--type-arrow pagination__item--type-arrow-left"><a href="#"
+                                    class="pagination__link"><span class="visually-hidden">Вперед</span></a></div>
+                            <div class="pagination__item"><a href="#" class="pagination__link">1</a></div>
+                            <div class="pagination__item"><a href="#" class="pagination__link">2</a></div>
+                            <div class="pagination__item"><a href="#" class="pagination__link">3</a></div>
+                            <div class="arrow-right pagination__item pagination__item--type-arrow pagination__item--type-arrow-right"><a href="#"
+                                    class="pagination__link"><span class="visually-hidden">Вперед</span></a></div>
+                            </div>
                     </section>
+
                 </section>
                 <section class="carousel-blog">
-                <div class="carousel container">
-
+                    <div class="carousel container">
                         <h2 class="page-title carousel__title">Последнее из блога</h2>
                         <a href="#" class="button button--transparent carousel__button">Перейти в блог</a>
-
-                    <div class="slider">
-                        <div class="slider__item">
-                            <picture>
-                                <img src="img/blog1.jpg" alt="Фото">
-                            </picture>
-                            <div class="slider__text">
-                                <h3 class="slider__title"><a>Открытое обучение - один из эффективных форматов</a></h3>
-                                <div class="slider__info-wrapper">
-                                    <div class="slider__info slider__info--date">
-                                        <span class="slider__info--icon"></span>
-                                        <span>Дата:</span> 2/11/2019</div>
-                                    <div class="slider__info slider__info--view">
-                                        <span class="slider__info--icon"></span>
-                                        <span>Просмотров:</span> 1 874</div>
-                                </div>
-                                <p class="slider__description">Открытое обучение – на сегодняшний день, один из самых эффективных учебных форматов.</p> 
+                        <div class="glide" id="slider">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="slider glide__slides">
+                                    <li class="slider__item glide__slide">
+                                        <picture>
+                                            <img src="img/blog1.jpg" alt="Фото">
+                                        </picture>
+                                        <div class="slider__text">
+                                            <h3 class="slider__title"><a>Открытое обучение - один из эффективных форматов</a></h3>
+                                            <div class="slider__info-wrapper">
+                                                <div class="slider__info slider__info--date">
+                                                    <span class="slider__info--icon"></span>
+                                                    <span>Дата:</span> 2/11/2019</div>
+                                                <div class="slider__info slider__info--view">
+                                                    <span class="slider__info--icon"></span>
+                                                    <span>Просмотров:</span> 1 874</div>
+                                            </div>
+                                            <p class="slider__description">Открытое обучение – на сегодняшний день, один из самых эффективных учебных форматов.</p> 
+                                        </div>
+                                    </li>
+                                    <li class="slider__item glide__slide">
+                                            <picture>
+                                                <img src="img/blog1.jpg" alt="Фото">
+                                            </picture>
+                                            <div class="slider__text">
+                                                <h3 class="slider__title"><a>первый слайд - один из эффективных форматов</a></h3>
+                                                <div class="slider__info-wrapper">
+                                                    <div class="slider__info slider__info--date">
+                                                        <span class="slider__info--icon"></span>
+                                                        <span>Дата:</span> 2/11/2019</div>
+                                                    <div class="slider__info slider__info--view">
+                                                        <span class="slider__info--icon"></span>
+                                                        <span>Просмотров:</span> 1 874</div>
+                                                </div>
+                                                <p class="slider__description"> – на сегодняшний день, один из самых эффективных учебных форматов.</p> 
+                                            </div>
+                                        </li>
+                                        <li class="slider__item glide__slide">
+                                                <picture>
+                                                    <img src="img/blog1.jpg" alt="Фото">
+                                                </picture>
+                                                <div class="slider__text">
+                                                    <h3 class="slider__title"><a>второйн из эффективных форматов</a></h3>
+                                                    <div class="slider__info-wrapper">
+                                                        <div class="slider__info slider__info--date">
+                                                            <span class="slider__info--icon"></span>
+                                                            <span>Дата:</span> 2/11/2019</div>
+                                                        <div class="slider__info slider__info--view">
+                                                            <span class="slider__info--icon"></span>
+                                                            <span>Просмотров:</span> 1 874</div>
+                                                    </div>
+                                                    <p class="slider__description">Открытое обучение – на сегодняшний день, один из самых эффективных учебных форматов.</p> 
+                                                </div>
+                                            </li>
+                                            <li class="slider__item glide__slide">
+                                                    <picture>
+                                                        <img src="img/blog1.jpg" alt="Фото">
+                                                    </picture>
+                                                    <div class="slider__text">
+                                                        <h3 class="slider__title"><a>третий обучение - один из эффективных форматов</a></h3>
+                                                        <div class="slider__info-wrapper">
+                                                            <div class="slider__info slider__info--date">
+                                                                <span class="slider__info--icon"></span>
+                                                                <span>Дата:</span> 2/11/2019</div>
+                                                            <div class="slider__info slider__info--view">
+                                                                <span class="slider__info--icon"></span>
+                                                                <span>Просмотров:</span> 1 874</div>
+                                                        </div>
+                                                        <p class="slider__description">Открытое обучение – на сегодняшний день, один из самых эффективных учебных форматов.</p> 
+                                                    </div>
+                                                </li>
+                                </ul>
+                            </div>
+                            <div class="glide__arrows" data-glide-el="controls">
+                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
                             </div>
                         </div>
                     </div>
-                </div>
                 </section>
             </main>
 
@@ -375,6 +435,28 @@
             
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 1,
+            perView: 4,
+            gap: 20,
+            breakpoints: {
+                1024: {
+                perView: 3
+                },
+                768: {
+                perView: 2
+                },
+                600: {
+                perView: 1
+                }
+            }
+            }).mount();
+            
+    </script>
 </body>
 </html>
 

@@ -1,3 +1,8 @@
+// // Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// // Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 @import "vars.scss";
 @import "global.scss";
 @import "mixin.scss";
@@ -14,5 +19,6 @@
 @import "services.scss";
 
 @import "carousel.scss";
+@import "slider.scss";
 @import "pagination.scss";
 @import "footer.scss";

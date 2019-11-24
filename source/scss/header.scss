@@ -10,6 +10,9 @@
         background-image: url("../img/bg-close.png");
         background-repeat: no-repeat;
         background-position: left top;
+        min-height: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
@@ -36,14 +39,14 @@
         color: $text-color;
     }
     @media (max-width: 768px) {
-        display: none;
+        display: block;
+        position: absolute;
+        right: 40px;
     }
 }
 
 .header__phone-mobile {
     display: none;
-    position: relative;
-    z-index: 99999;
     font-size: 1.28em;
     font-family: $firasans-medium;
     a {

@@ -80,7 +80,6 @@
         /* ie workaround */
         -ms-transform: translatex(100vw);
         box-sizing: border-box;
-        pointer-events: none;
         transition: width 475ms ease-out, transform 450ms ease, border-radius .8s .1s ease;
         border-bottom-right-radius: 97vw;
         background-color: $bg-color;
@@ -174,7 +173,7 @@ input.hamburger {
   label.hamburger {
     position: fixed;
     top: 15px;
-    left: 20px;
+    left: 15px;
   }
 
   body {

@@ -23,8 +23,13 @@
     display: flex;
     justify-content: center;
     @media (max-width: 768px) {
-        min-width: 265px
+        min-width: 265px;
+        &:hover,
+        &:active {
+        background-color: $input-wrong;
+        color: $bg-color;
     }
+}
 }
 
 .button__icon-lock {

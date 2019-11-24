@@ -25,14 +25,6 @@
     }
     &:last-of-type {
         margin-right: 0;
-        background-image: url("../img/icons/right-arrow-forward.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 12px 12px;
-        opacity: 0.7;
-        &:hover {
-            opacity: 1;
-        }
     }
 }
 
@@ -67,3 +59,6 @@
     color: $text-dark;
     
 }
+
+
+
