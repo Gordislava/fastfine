@@ -25,10 +25,10 @@
     "gulp-webp": "^4.0.1"
   },
   "scripts": {
-    "build": "gulp css",
-    "start": "gulp start",
-    "webp": "gulp webp",
-    "images": "gulp images"
+    "build": "gulp build",
+    "start": "npm run build && gulp serve",
+    "minify": "gulp images",
+    "webpx": "gulp webp"
   },
   "browserslist": [
     "last 2 versions",
