@@ -29,7 +29,7 @@
     </svg>
     <div>
         <div class="main-wrapper">
-            <!-- <section class="container"> -->
+
                 <header class="header container">
                     <input id="hamburger" class="hamburger " type="checkbox"/>
                     <label class="hamburger" for="hamburger">
@@ -89,12 +89,12 @@
                         </div>
                     </div>
                 </header>
-            <!-- </section> -->
+
             <footer class="footer">
-                <div class="footer__row">
+                <div class="container footer__row">
                     <div class="footer__col">
-                        <h3 class="footer__title">Услуги</h3>
-                        <ul class="footer__list">
+                        <h3 class="footer__title accordeon">Услуги</h3>
+                        <ul class="footer__list panel">
                             <li>
                                 <a href="">Контрольные работы</a>
                             </li>
@@ -113,8 +113,8 @@
                         </ul>
                     </div>
                     <div class="footer__col">
-                        <h3 class="footer__title">Клиентам</h3>
-                        <ul>
+                        <h3 class="footer__title accordeon">Клиентам</h3>
+                        <ul class="panel">
                             <li>
                                 <a href="">Вопросы и ответы</a>
                             </li>
@@ -130,8 +130,8 @@
                         </ul>
                     </div>
                     <div class="footer__col">
-                        <h3 class="footer__title">О компании</h3>
-                        <ul>
+                        <h3 class="footer__title accordeon">О компании</h3>
+                        <ul class="panel">
                             <li>
                                 <a href="">Контакты</a>
                             </li>
@@ -144,24 +144,45 @@
                         </ul>
                     </div>
                     <div class="footer__col">
-                        <h3 class="footer__title">Мы в соц сетях</h3>
-                        <ul class="social">
-                            <li>
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-            
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer__col">
-                        <h3 class="footer__title footer__title--contacts">Контакты</h3>
-                        <a href="tel:" class="footer__phone">8 800 777 147 58</a>
-                        <p class="footer__adress">г.Москва, ул.Садовническая, д.82</p>
-                        <a href="mailto:info@fastfine.ru" class="footer__mail">info@fastfine.ru</a>
-                    </div>
+                        <!-- <div class="footer__col-mobile"> -->
+                            <h3 class="footer__title footer__title--desktop-hidden">Наши контакты</h3>
+                            <h3 class="footer__title footer__title--mobile-hidden">Мы в соц сетях</h3>
+                            <ul class="social">
+                                <li class="social__item social__item--telegram">
+                                    <a href="#" class="social__link">
+                                        <span class="visually-hidden">Telegram</span>
+                                        <svg class="social__icon social__icon--telegram" width="17" height="17">
+                                            <use xlink:href="#icon-telegram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item social__item--vk">
+                                    <a href="" class="social__link">
+                                        <span class="visually-hidden">Vk</span>
+                                        <svg class="social__icon social__icon--vk" width="20" height="15">
+                                            <use xlink:href="#icon-vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item social__item--fb">
+                                    <a href="" class="social__link">
+                                        <span class="visually-hidden">Facebook</span>
+                                        <svg class="social__icon social__icon--fb" width="15" height="17">
+                                            <use xlink:href="#icon-fb"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <h3 class="footer__title footer__title--contacts">Контакты</h3>
+                            <a href="tel:" class="footer__phone">8 800 777 147 58</a>
+                            <p class="footer__adress">г.Москва, ул.Садовническая, д.82</p>
+                            <a href="mailto:info@fastfine.ru" class="footer__mail">info@fastfine.ru</a>
+                        <!-- </div> -->
+                        </div>
                 </div>
-                <div class="footer__row">
+                <div class="container footer__row">
                     <p class="footer__copyright">Copyright 2019 FastFine.ru</p>
                 </div>
             </footer>
@@ -169,6 +190,7 @@
             
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
 

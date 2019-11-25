@@ -26,7 +26,9 @@
   },
   "scripts": {
     "build": "gulp css",
-    "start": "gulp start"
+    "start": "gulp start",
+    "webp": "gulp webp",
+    "images": "gulp images"
   },
   "browserslist": [
     "last 2 versions",

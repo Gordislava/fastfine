@@ -124,6 +124,9 @@ h5 {
     max-width: 1220px;
     padding: 0 20px;
     margin: auto;
+    @media (max-width: 420px) {
+        padding: 0 15px;
+    }
     @media (max-width: 1220px) {
         max-width: none;
     }
@@ -136,6 +139,9 @@ h5 {
     margin: 0 auto;
     @media (max-width: 1920px) {
         max-width: none;
+    }
+    @media (max-width: 768px) {
+        padding-top: 70px;
     }
 }
 

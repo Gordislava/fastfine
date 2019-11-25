@@ -1,14 +1,15 @@
 .logo {
     margin-right: 30px;
     @media (max-width: 768px) {
-        margin-left: 65px;
+        margin-left: 45px;
+        margin-right: 0;
     }
 }
 
 .logo__img {
     width: 144px;
     height: 45px;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         width: 95px;
         height: 30px;
     }
