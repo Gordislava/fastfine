@@ -1,0 +1,41 @@
+.advantage__list {
+    @include list-norm;
+    display: flex;
+    max-width: 700px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    @media (max-width:768px) {
+        display: none;
+    }
+}
+
+.advantage__item {
+    font-size: 15px;
+    line-height: 22px;
+    color: $text-dark;
+    padding-left: 63px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 32%;
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.advantage__item--personal {
+    background-image: url("../img/icons/technician.svg");
+    background-size: 42px 48px;
+}
+
+.advantage__item--remote {
+    background-image: url("../img/icons/clock.svg");
+    background-size: 50px 50px;
+    padding-right: 15px;
+}
+
+.advantage__item-money {
+    background-image: url("../img/icons/money-bag.svg");
+    background-size: 50px 50px;
+}

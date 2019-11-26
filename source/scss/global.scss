@@ -96,14 +96,26 @@ fieldset {
     padding: 0;
 }
 
+h1 {
+    font-size: 48px;
+    font-family: $firasans-bold;
+    line-height: 59px; 
+    @media (max-width: 768px) {
+        font-size: 19px;
+        line-height: 30px;
+    }
+}
+
 h5 {
     font-size: 19px;
     font-family: $firasans-bold;
 }
 
+
 .page-title {
     font-size: 35px;
     font-family: $firasans-bold;
+    color: $text-dark;
     @media (max-width: 768px) {
         font-size: 19px;
     }

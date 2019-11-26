@@ -48,7 +48,7 @@
     color: $text-dark;
     line-height: 2.7em;
     padding-bottom: 5px;
-    border-bottom: 2px solid $bg-color;
+    border-bottom: 2px solid transparent;
     transition: all .25s ease-in;
     &:hover {
         border-bottom: 2px solid $hover;

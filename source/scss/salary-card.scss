@@ -1,0 +1,9 @@
+.salary__list {
+    @include list-norm;
+}
+
+.salary-card {
+    max-width: 370px;
+    width: 31%;
+
+}

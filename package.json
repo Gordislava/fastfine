@@ -26,7 +26,7 @@
   },
   "scripts": {
     "build": "gulp build",
-    "start": "npm run build && gulp serve",
+    "start": "gulp start",
     "minify": "gulp images",
     "webpx": "gulp webp"
   },
