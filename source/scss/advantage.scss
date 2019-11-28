@@ -10,6 +10,85 @@
     }
 }
 
+.advantage--big {
+    background-color: $light-blue;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url("../img/Иллюстрации/for_authors_image_1.svg");
+    background-repeat: no-repeat;
+    background-position: -35px bottom;
+    background-size: 50%;
+    @media (max-width: 768px) {
+        background-image: none;
+        padding: 0 15px;
+        align-items: center;
+    }
+}
+
+.advantage--big .page-title {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 85px;
+}
+
+.advantage--big.advantage--page-work {
+    background-color: transparent;
+    background-image: url("../img/Иллюстрации/women_collage.svg");
+    z-index: 1;
+    }
+
+.advantage--big.advantage--page-work .page-title {
+    align-self: flex-start;
+    text-align: left;
+    @media (max-width: 768px) {
+        padding-top: 30px;
+        margin-bottom: 35px;
+    }
+}
+
+.advantage--big .advantage__list {
+    max-width: 850px;
+    margin-bottom: 0;
+    margin-right: 12%;
+    @media (max-width: 1440px) {
+        margin-right: 2%;
+    }
+    @media (max-width: 1024px) {
+        max-width: 700px;
+    }
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.advantage--big.advantage--page-work .advantage__list{
+    max-width: 850px;
+    margin-right: 0;
+}
+
+.advantage--big .advantage__item {
+    width: 45%;
+    margin-bottom: 42px;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.advantage__title {
+    font-size: 17px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
 .advantage__item {
     font-size: 15px;
     line-height: 22px;
@@ -21,6 +100,9 @@
     p {
         margin: 0;
         padding: 0;
+    }
+    @media (max-width: 768px) {
+        padding-left: 52px;
     }
 }
 
@@ -38,4 +120,195 @@
 .advantage__item-money {
     background-image: url("../img/icons/money-bag.svg");
     background-size: 50px 50px;
+}
+
+.advantage__item--plagiat {
+    background-image: url("../img/icons/biometric.svg");
+    background-size: 48px 48px;
+}
+
+.advantage__item--warranty {
+    background-image: url("../img/icons/guarantee.svg");
+    background-size: 42px 48px;
+}
+
+.advantage__item--time {
+    background-image: url("../img/icons/message.svg");
+    background-size: 50px 50px;
+    position: relative;
+    @media (max-width: 768px) {
+        background-image: none;
+    }
+        &::before {
+        @include pseudo;
+        width: 32px;
+        height: 32px;
+        left: 8px;
+        top: 13px;
+        background-color: $accent;
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+}
+
+.advantage__item--commission {
+    background-image: url("../img/icons/dollar-symbol.svg");
+    background-size: 50px 50px;
+    position: relative;
+    &::before {
+        @include pseudo;
+        width: 32px;
+        height: 32px;
+        left: 9px;
+        top: 9px;
+        background-color: $accent;
+        border-radius: 50%;
+        z-index: -1;
+    }
+}
+
+.advantage__item--price {
+    background-image: url("../img/icons/security.svg");
+    background-size: 40px 50px;
+    position: relative;
+    &::before {
+        @include pseudo;
+        width: 28px;
+        height: 28px;
+        left: 6px;
+        top: 11px;
+        background-color: $accent;
+        border-radius: 50%;
+        z-index: -1;
+    }
+}
+
+.advantage__item--like {
+    background-image: url("../img/icons/like.svg");
+    background-size: 52px 53px;
+    position: relative;
+    &::before {
+        @include pseudo;
+        width: 32px;
+        height: 32px;
+        left: 9px;
+        top: 11px;
+        background-color: $accent;
+        border-radius: 50%;
+        z-index: -1;
+    }
+}
+
+.advantage__item--autors {
+    background-image: url("../img/icons/medal.svg");
+    background-size: 43px 50px;
+    position: relative;
+    &::before {
+        @include pseudo;
+        width: 28px;
+        height: 28px;
+        left: 3px;
+        top: 11px;
+        background-color: $accent;
+        border-radius: 50%;
+        z-index: -1;
+    }
+}
+
+.advantage__item--chat {
+    background-image: url("../img/icons/chat.svg");
+    background-size: 50px 42px;
+    position: relative;
+    &::before {
+        @include pseudo;
+        width: 28px;
+        height: 28px;
+        left: 7px;
+        top: 4px;
+        background-color: $accent;
+        border-radius: 50%;
+        z-index: -1;
+    }
+}
+
+.advantage__item--like,
+.advantage__item--price,
+.advantage__item--commission,
+.advantage__item--time,
+.advantage__item--autors,
+.advantage__item--chat {
+    @media (max-width: 768px) {
+        background-image: none;
+        &::before {
+            @include pseudo;
+            width: 30px;
+            height: 30px;
+            left: 5px;
+            top: -4px;
+            background-color: #ffffff;
+            border: 5px solid #f4d75c;
+            border-radius: 50%;
+            text-align: center;
+            font-family: "FiraSans-Bold", helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 20px;
+            z-index: -1;
+            box-sizing: border-box; 
+        }
+    }
+}
+
+.advantage__item--time {
+    @media (max-width: 768px) {
+        background-image: none;
+        &::before {
+            content: "1";
+        }
+    }
+}
+
+.advantage__item--commission {
+    @media (max-width: 768px) {
+        background-image: none;
+        &::before {
+            content: "2";
+        }
+    }
+}
+
+.advantage__item--price {
+    @media (max-width: 768px) {
+        background-image: none;
+        &::before {
+            content: "3";
+        }
+    }
+}
+
+.advantage__item--like {
+    @media (max-width: 768px) {
+        background-image: none;
+        &::before {
+            content: "4";
+        }
+    }
+}
+
+.advantage__item--autors {
+    @media (max-width: 768px) {
+        background-image: none;
+        &::before {
+            content: "5";
+        }
+    }
+}
+
+.advantage__item--chat {
+    @media (max-width: 768px) {
+        background-image: none;
+        &::before {
+            content: "6";
+        }
+    }
 }

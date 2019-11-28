@@ -71,3 +71,22 @@
         background-color: $accent-dark;
     }
 }
+
+.button-request {
+    display: inline-block;
+    padding: 19px 64px 19px 50px;
+    border-radius: 30px;
+    position: relative;
+    &::after {
+        @include pseudo;
+        width: 21px;
+        height: 21px;
+        background-image: url("../img/icons/chevron.svg");
+        background-repeat: no-repeat;
+        background-size: 21px 21px;
+        top: 50%;
+        margin-top: -11px;
+        right: 17px;
+        opacity: 0.4;
+    }
+}

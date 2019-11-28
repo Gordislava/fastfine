@@ -144,6 +144,10 @@ h5 {
     }
 }
 
+.container--size-small {
+    max-width: 880px;
+}
+
 .main {
     width: 100%;
     max-width: 1920px;
@@ -154,6 +158,12 @@ h5 {
     }
     @media (max-width: 768px) {
         padding-top: 70px;
+    }
+}
+
+.main.main-autors {
+    @media (max-width: 768px) {
+        padding-top: 0;
     }
 }
 

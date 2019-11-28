@@ -1,0 +1,67 @@
+.list-icons {
+    @include list-norm;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}
+
+.list-icons__item {
+    width: 24%;
+    padding-top: 85px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    @media (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+        background-position: center top;
+        margin-bottom: 20px;
+    }
+}
+
+.list-icons__title {
+    font-size: 17px;
+    font-family: $firasans-bold;
+    color: $text-dark;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.list-icons__text {
+    padding: 0;
+    margin: 0;
+}
+
+.list-icons__item--registration {
+    background-image: url("../img/icons/laptop.svg");
+    background-size: 64px 64px;
+}
+
+.list-icons__item--order {
+    background-image: url("../img/icons/homework.svg");
+    background-size: 64px 64px;
+}
+
+.list-icons__item--money-bag {
+    background-image: url("../img/icons/money-bag.svg");
+    background-size: 64px 64px;
+}
+
+.list-icons__item--specialist {
+    background-image: url("../img/icons/businesswoman.svg");
+    background-size: 50px 58px;
+}
+
+.list-icons__item--note {
+    background-image: url("../img/icons/list.svg");
+    background-size: 50px 58px;
+}
+
