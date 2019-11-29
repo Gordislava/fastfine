@@ -111,6 +111,39 @@ h5 {
     font-family: $firasans-bold;
 }
 
+ul:not([class]) {
+    // list-style-image: url('../img/circle-min.png');
+    // margin-left: 60px;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 30px;
+}
+    
+
+ul:not([class]) li {
+        padding-bottom: 15px;
+        &::before {
+            content: url('../img/circle-min.png');
+            width: 21px;
+            height: 21px;
+            position: relative;
+            top: 4px;
+            right: 15px;
+        }
+        p {
+            padding: 0;
+            margin: 0;
+        }
+    
+}
+
 
 .page-title {
     font-size: 35px;

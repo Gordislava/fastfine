@@ -59,3 +59,32 @@
         }
     }
 }
+
+.salling-info {
+    background-color: $light-blue;
+    background-image: url("../img/bg-blue.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right top;
+    padding-bottom: 15px;
+    .page-title {
+        margin: 0;
+        padding-top: 42px;
+        max-width: 50%;
+    }
+    .content {
+        padding-top: 25px;
+    }
+
+}
+
+.salling-info__img {
+    max-width: 360px;
+    height: auto;
+    float: right;
+    margin-left: 14px;
+    position: relative;
+    margin-top: -25px;
+    transform: scale(-1, 1);
+}
+
