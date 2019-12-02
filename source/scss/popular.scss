@@ -5,6 +5,11 @@
     text-align: center;
 }
 
+.popular.popular--single-work h5 {
+    padding-top: 30px;
+}
+
+
 .popular__list {
     @include list-norm;
     width: 100%;

@@ -94,8 +94,9 @@
     height: auto;
     text-align: center;
     position: absolute;
-    bottom: -135px;
+    bottom: -120px;
     z-index: -1;
+    right: 26px;
     @media (max-width: 768px) {
         bottom: -60px;
         right: 0;

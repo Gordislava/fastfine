@@ -53,7 +53,7 @@
                                     <li class="main-menu__item"><a href="" class="main-menu__link">Контакты</a></li>
                                 </ul>
                             </nav>  
-                                <div class="header__phone">   
+                                <div class="header__phone header__phone--general-page">   
                                     <a href="tel:880077714758">8 800 777 147 58</a>
                                 </div>
                             <button class="button button--small header__button"><svg class="button__icon-lock" width="15" height="15">
@@ -106,20 +106,32 @@
                             </ul>
                         </section>
                         <form action="" class="form">
-                            <h3>Зарегистрироваться и стать автором</h3>
-                            <div class="form__wrapper">
-                                <input type="text" placeholder="ФИО">
-                                <div>
-                                    <input type="text" name="email" placeholder="Email">
-                                    <input type="phone">
-                                    <span>Поле заполнено не верно</span>
+                                <h3 class="form__title">Зарегистрироваться и стать автором</h3>
+                                <div class="form__wrapper">
+                                    <label class="form__label form__label--full">
+                                        <input type="text" name="name" class="form__input" required>
+                                        <div class="form__label-text">ФИО</div>
+                                    </label>
+                                    <div class="form__input-wrapper">
+                                        <label class="form__label">
+                                            <input type="text" name="email" class="form__input" required>
+                                            <div class="form__label-text">Email</div>
+                                            <span class="form__warning">Поле заполнено не верно</span>
+                                        </label>
+                                        <label class="form__label">
+                                            <input type="text" name="phone" class="form__input" required>
+                                            <div class="form__label-text">Телефон</div>
+                                            <span class="form__warning">Поле заполнено не верно</span>
+                                        </label>
+                                    </div>
+                                    <textarea name="about" id="" required class="form__input form__input--textarea"></textarea>
+                                    <div class="form__label-text form__label-text--textarea">О себе</div>
                                 </div>
-                                <textarea name="about" id="" placeholder="О себе"></textarea>
-                                <span>Поле заполнено не верно</span>
-                            </div>
-                            <button>Зарегистрироваться</button>
-                            <p class="note">Регистрируясь вы автоматически соглашаетесь с обработкой своих персональных данных в соответствии с <a>Политикой
-                            конфеденциальности</a></p>
+                                <div class="form__button-wrapper">
+                                    <button class="button button-request">Зарегистрироваться</button>
+                                    <p class="form__note">Регистрируясь вы автоматически соглашаетесь с обработкой своих персональных данных в соответствии с <a>Политикой
+                                    конфеденциальности</a></p>
+                                </div>
                         </form>
                         <section class="advantage advantage--big advantage--page-work">
                             <h2 class="page-title">Преимущества реферата под заказ</h2>
@@ -255,23 +267,23 @@
                             <div>
                                 <ul class="reviews__list">
                                     <li class="reviews__item">
-                                        <div>
+                                        <div class="reviews__head">
                                             <img src="img/avatar1.png" alt="" class="reviews__img">
-                                            <h3 class="reviews__title">Александра Амосова</h3>
-                                            <span class="reviews__date">24 октября 2019</span>
-                                            <div class="reviews__rate">
-                                                <div class="star active"></div>
-                                                <div class="star active"></div>
-                                                <div class="star active"></div>
-                                                <div class="star active"></div>
-                                                <div class="star inactive"></div>
-
+                                            <div class="reviews__head-text">
+                                                <h3 class="reviews__title">Александра Амосова</h3>
+                                                <span class="reviews__date">24 октября 2019</span>
+                                                <div class="reviews__rate">
+                                                    <div class="star active"></div>
+                                                    <div class="star active"></div>
+                                                    <div class="star active"></div>
+                                                    <div class="star active"></div>
+                                                    <div class="star inactive"></div>
+                                                </div>
                                             </div>
                                             <a href="#" class="reviews__social-link"><span class="visually-hidden">Vk</span>
-                                            <svg class="social__icon social__icon--vk" width="29" height="16">
+                                            <svg class="social__icon social__icon--vk" width="40" height="40">
                                                 <use xlink:href="#icon-vk"></use>
                                             </svg></a>
-                                            <a href="#" class="reviews__social-link">vk</a>
                                         </div>
                                         <div>
                                             <p class="reviews__text">"У меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
@@ -284,6 +296,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            <img src="img/slide-group.png" alt="" class="reviews__img-slide">
                         </div>
                         
                     </section>
@@ -324,6 +337,17 @@
                             </div>
                         </div>
                     </section>
+                    <section class="container popular popular--single-work">
+                            <h5>Помощь в написании реферата по предметам</h2>
+                                <ul class="popular__list">
+                                    <li class="popular__item"><a href="" class="popular__link">Управление персоналом</a></li>
+                                    <li class="popular__item"><a href="" class="popular__link">Уголовное право</a></li>
+                                    <li class="popular__item"><a href="" class="popular__link">Гражданское право</a></li>
+                                    <li class="popular__item"><a href="" class="popular__link">Физкультура и спорт</a></li>
+                                    <li class="popular__item"><a href="" class="popular__link">Бухгалтерский учет и аудит</a></li>
+                                    <li class="popular__item"><a href="" class="popular__link">Экономика предприятий</a></li>
+                                </ul>
+                        </section>
                 </main>
 
             <footer class="footer">

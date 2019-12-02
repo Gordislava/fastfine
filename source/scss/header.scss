@@ -55,6 +55,10 @@
     }
 }
 
+.header__phone--general-page a {
+    color: $bg-color;
+}
+
 .header__phone-mobile {
     display: none;
     font-size: 1.28em;

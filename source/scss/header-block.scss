@@ -2,11 +2,13 @@
     max-width: 1920px;
     // background-image: url("../img/Иллюстрации/main_image.svg") no-repeat top right, url("../img/bg-gradient.png") no-repeat ;
 
-    background-image: url("../img/bg-gradient.png");
-    background-repeat: no-repeat;
+    background-image:   url("../img/Иллюстрации/main_image.svg"), 
+                        url("../img/background-gradient.png");
+    background-repeat: no-repeat, no-repeat;
     overflow-x: hidden;
     position: relative;
-    background-position: left top 130px;
+    background-position: right top, left bottom;
+    background-size: 903px auto, auto;
     &::before {
         @include pseudo;
         width: 76px;
@@ -14,7 +16,7 @@
         background-image: url("../img/rocket.png");
         background-repeat: no-repeat;
         background-position: center;
-        top: 120px;
+        top: 200px;
         left: 90px;
         z-index: -1;
         @media (max-width:768px) {
