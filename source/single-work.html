@@ -108,30 +108,56 @@
                         <form action="" class="form">
                                 <h3 class="form__title">Зарегистрироваться и стать автором</h3>
                                 <div class="form__wrapper">
-                                    <label class="form__label form__label--full">
-                                        <input type="text" name="name" class="form__input" required>
-                                        <div class="form__label-text">ФИО</div>
-                                    </label>
-                                    <div class="form__input-wrapper">
-                                        <label class="form__label">
-                                            <input type="text" name="email" class="form__input" required>
-                                            <div class="form__label-text">Email</div>
-                                            <span class="form__warning">Поле заполнено не верно</span>
-                                        </label>
-                                        <label class="form__label">
-                                            <input type="text" name="phone" class="form__input" required>
-                                            <div class="form__label-text">Телефон</div>
-                                            <span class="form__warning">Поле заполнено не верно</span>
-                                        </label>
+                                   <div class="form__input-wrap">
+                                       <select name="subject" id="" class="form__select">
+                                            <option class="form-option placeholder" selected disabled>Вид работы</option>
+                                        <option value="" class="form__option">Дипломная работа</option>
+                                        <option value="" class="form__option" style="font-size: 12px; color: #434448;">Курсовая работа</option>
+                                        <option value="" class="form__option">Отчет по практике</option>
+                                       </select>
+                                   </div>
+                                <div class="form__input-whitespace-wrapper">
+                                    <div class="form__input-wrap">
+                                        <select name="subject" id="" class="form__select form__select--volume">
+                                            <option class="form-option placeholder" selected disabled>Объем</option>
+                                            <option value="" class="form__option">1-10</option>
+                                            <option value="" class="form__option" style="font-size: 12px; color: #434448;">11-20</option>
+                                            <option value="" class="form__option">20-80</option>
+                                        </select>
                                     </div>
-                                    <textarea name="about" id="" required class="form__input form__input--textarea"></textarea>
-                                    <div class="form__label-text form__label-text--textarea">О себе</div>
+                                    <div class="form__input-wrap form__input-wrap--type">
+                                        <select name="subject" id="" class="form__select form__select--type">
+                                            <option value="" class="form__option">Страниц</option>
+                                            <option value="" class="form__option" style="font-size: 12px; color: #434448;">Задач</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="form__button-wrapper">
-                                    <button class="button button-request">Зарегистрироваться</button>
-                                    <p class="form__note">Регистрируясь вы автоматически соглашаетесь с обработкой своих персональных данных в соответствии с <a>Политикой
-                                    конфеденциальности</a></p>
+                                   <div class="form__input-wrap"><input type="text" class="form__input form__autocomplite" placeholder="Предмет"></div>
                                 </div>
+                                <div>
+                                    <div>
+                                        <p class="form__note">Для индивидуальной оценки нетипичные заказы просьба высылать на <span>Email:
+                                            info@fastfine.ru</span> <a>Подробнее</a>
+                                        </p>
+                                    </div>
+                                    <div class="form__promo">
+                                        <label class="form__label form__label--promo">
+                                            <input type="text" name="phone" class="form__input" required>
+                                            <div class="form__label-text">Промокод</div>
+                                        </label>
+                                        <p class="form__promo-note">У меня есть промокод</p>
+                                    </div>
+                                    <div>
+                                        <span>Стоимость работы от:</span>
+                                        <span>
+                                            1500 руб.
+                                        </span>
+                                    </div>
+                                </div>
+
+                                    <button class="button button-request">Узнать точную цену</button>
+                                    
+
                         </form>
                         <section class="advantage advantage--big advantage--page-work">
                             <h2 class="page-title">Преимущества реферата под заказ</h2>

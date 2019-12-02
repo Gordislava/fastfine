@@ -5,7 +5,6 @@
     box-shadow: 0px 15px 54px 0 rgba(0, 0, 0, 0.15);
     background-color: $bg-color;
     padding: 18px 33px 21px;
-
 }
 
 .form__title {
@@ -24,8 +23,7 @@
     border: solid 1px #ecedef;
     background-color: $input-gray;
     color: $text-dark;
-    font-size: 14px;
-    font-family: $firasans-medium;
+    font-size: 12px;
     margin-bottom: 15px;
     transition: all .25 ease-out;
     &:hover {
@@ -87,7 +85,7 @@
 // .form__input:focus::placeholder {
 //     font-size: 11px;
 //     position: relative;
- 
+
 // }
 
 
@@ -121,12 +119,12 @@
 }
 
 .form__label-text--textarea {
-    transform: translateY(-86px)
+    transform: translateY(-70px)
 }
 
 .form__input:focus + .form__label-text--textarea,
 .form__input:valid + .form__label-text--textarea {
-    transform: translateY(-93px)
+    transform: translateY(-80px)
 }
 
 input, textarea {outline:none;}
@@ -146,4 +144,116 @@ input:active, textarea:active {outline:none;}
     a {
         color: $opposite;
     }
+}
+
+
+.form__select {
+    padding: 14px 17px;
+    border-radius: 2px;
+    border: solid 1px #ecedef;
+    background-color: $input-gray;
+    color: $text-dark;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    transition: all .25 ease-out;
+    outline: none;
+    &:hover {
+        border-color: #d6d8e0;
+    }
+    &:focus {
+        background-color: $input-gray;
+    }
+}
+
+.form__input-wrap {
+    display: inline-block;
+    position: relative;
+    &::after {
+        @include pseudo;
+        width: 33px;
+        height: 43px;
+        background-color: #f8f9fa;
+        background-image: url("../img/icons/sort-down.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 6px 4px;
+        right: 1px;
+        top: 1px;
+        pointer-events: none;
+    }
+}
+
+.form__option {
+    font-size: 12px;
+    font-weight: 400;
+    color: #434448;
+}
+
+select > .placeholder {
+  display: none;
+}
+
+.form__input-whitespace-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form__input-wrap--type,
+.form__select--type {
+    border-left: none;
+}
+
+.form__select--volume {
+    border-top-right-radius: 0;
+     border-bottom-right-radius: 0;
+}
+
+.form__promo {
+    position: relative;
+    width: 257px;
+    height: 45px;
+}
+
+.form__promo-note {
+    display: inline-block;
+    color: #2b2a7b;
+    font-size: 12px;
+    line-height: 13px;
+    padding: 0;
+    margin-left: 20px;
+    border-bottom: 1px dashed $text-dark;
+    font-size: $firasans-bold;
+    position: relative;
+    cursor: pointer;
+    padding-top: 16px;
+}
+
+.form__promo-note::before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 8px;
+    background-image: url("../img/icons/check-symbol.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 11px 8px;
+    top: 19px;
+    left: -17px;
+}
+
+.form__label--promo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+
+}
+
+.form__promo.active .form__label--promo {
+    display: block;
+}
+
+.form__promo.active .form__promo-note {
+    display: none;
 }

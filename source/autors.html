@@ -106,20 +106,33 @@
                             </ul>
                         </section>
                         <form action="" class="form">
-                            <h3>Зарегистрироваться и стать автором</h3>
+                            <h3 class="form__title">Зарегистрироваться и стать автором</h3>
                             <div class="form__wrapper">
-                                <input type="text" placeholder="ФИО">
-                                <div>
-                                    <input type="text" name="email" placeholder="Email">
-                                    <input type="phone">
-                                    <span>Поле заполнено не верно</span>
+                                <label class="form__label form__label--full">
+                                    <input type="text" name="name" class="form__input" required>
+                                    <div class="form__label-text">ФИО</div>
+                                </label>
+                                <div class="form__input-wrapper">
+                                    <label class="form__label">
+                                        <input type="text" name="email" class="form__input" required>
+                                        <div class="form__label-text">Email</div>
+                                        <span class="form__warning">Поле заполнено не верно</span>
+                                    </label>
+                                    <label class="form__label">
+                                        <input type="text" name="phone" class="form__input" required>
+                                        <div class="form__label-text">Телефон</div>
+                                        <span class="form__warning">Поле заполнено не верно</span>
+                                    </label>
                                 </div>
-                                <textarea name="about" id="" placeholder="О себе"></textarea>
-                                <span>Поле заполнено не верно</span>
+                                <textarea name="about" id="" required class="form__input form__input--textarea"></textarea>
+                                <div class="form__label-text form__label-text--textarea">О себе</div>
                             </div>
-                            <button>Зарегистрироваться</button>
-                            <p class="note">Регистрируясь вы автоматически соглашаетесь с обработкой своих персональных данных в соответствии с <a>Политикой
-                            конфеденциальности</a></p>
+                            <div class="form__button-wrapper">
+                                <button class="button button-request">Зарегистрироваться</button>
+                                <p class="form__note">Регистрируясь вы автоматически соглашаетесь с обработкой своих персональных данных в
+                                    соответствии с <a>Политикой
+                                        конфеденциальности</a></p>
+                            </div>
                         </form>
                         <section class="offer">
                             <h2 class="page-title">Наши расценки</h2>
