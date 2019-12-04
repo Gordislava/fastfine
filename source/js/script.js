@@ -13,6 +13,8 @@
 
 // glide.mount()
 
+
+
 var acc = document.getElementsByClassName("accordeon");
 var i;
 
@@ -26,4 +28,27 @@ for (i = 0; i < acc.length; i++) {
             panel.style.maxHeight = panel.scrollHeight + "px";
         }
     });
+}
+
+window.onload = function () {
+    initInputs();
+};
+
+function initInputs() {
+    var customInputs = document.getElementsByClassName("form__item");
+    var _loop_1 = function (i) {
+        var input = customInputs[i].querySelector("input, textarea");
+        if (input.value !== "")
+            customInputs[i].classList.add("focused");
+        input.addEventListener("focus", function () {
+            customInputs[i].classList.add("focused");
+        });
+        input.addEventListener("focusout", function () {
+            if (input.value === "")
+                customInputs[i].classList.remove("focused");
+        });
+    };
+    for (var i = 0; i < customInputs.length; i++) {
+        _loop_1(i);
+    }
 }

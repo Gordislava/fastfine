@@ -1,10 +1,15 @@
 .form {
-    width: 880px;
+    max-width: 880px;
     height: auto;
     border-radius: 12px;
     box-shadow: 0px 15px 54px 0 rgba(0, 0, 0, 0.15);
     background-color: $bg-color;
     padding: 18px 33px 21px;
+    position: relative;
+    z-index: 10;
+    @media (max-width: 600px) {
+       padding: 18px 20px 23px; 
+    }
 }
 
 .form__title {
@@ -17,7 +22,26 @@
     color: $text-dark;
 }
 
+.form__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+.form__wrapper--price {
+    @media (max-width: 600px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 .form__input {
+    width: 100%;
     padding: 15px 17px;
     border-radius: 2px;
     border: solid 1px #ecedef;
@@ -139,15 +163,58 @@ input:active, textarea:active {outline:none;}
 .form__note {
     padding: 0;
     margin: 0;
-    margin-left: 22px;
+    max-width: 360px;
     font-size: 12px;
     a {
         color: $opposite;
+        text-decoration: underline;
     }
+    span {
+        font-family: $firasans-bold;
+    }
+    padding-left: 40px;
+    display: inline-block;
+    background-image: url("../img/icons/information.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 24px 24px;
+    position: relative;
+    @media (max-width: 600px) {
+            display: none;
+        }
+    &::before {
+        @include pseudo;
+        width: 16px;
+        height: 16px;
+        left: 4px;
+        top: 4px;
+        background-color: $accent;
+        border-radius: 50%;
+        z-index: -1;
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
+}
+.form__note--mobile {
+    display: none;
+    font-size: 11px;
+    max-width: 145px;
+    margin: 0;
+    padding: 0;
+    a {
+        color: $opposite;
+        text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+            display: block;
+            order: 3;
+        }
 }
 
 
 .form__select {
+    width: 100%;
     padding: 14px 17px;
     border-radius: 2px;
     border: solid 1px #ecedef;
@@ -169,6 +236,10 @@ input:active, textarea:active {outline:none;}
 .form__input-wrap {
     display: inline-block;
     position: relative;
+    width: 32%;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
     &::after {
         @include pseudo;
         width: 33px;
@@ -197,6 +268,15 @@ select > .placeholder {
 .form__input-whitespace-wrapper {
     display: flex;
     justify-content: flex-start;
+    width: 32%;
+    order:2;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.form__input-whitespace-wrapper .form__input-wrap {
+    width: 50%;
 }
 
 .form__input-wrap--type,
@@ -213,9 +293,14 @@ select > .placeholder {
     position: relative;
     width: 257px;
     height: 45px;
+    width: 32%;
+    @media (max-width: 600px) {
+        width: 100%;
+        order:1;
+    }
 }
 
-.form__promo-note {
+.form__promo-note { 
     display: inline-block;
     color: #2b2a7b;
     font-size: 12px;
@@ -223,10 +308,14 @@ select > .placeholder {
     padding: 0;
     margin-left: 20px;
     border-bottom: 1px dashed $text-dark;
-    font-size: $firasans-bold;
+    font-family: $firasans-bold;
     position: relative;
     cursor: pointer;
     padding-top: 16px;
+    @media (max-width: 600px) {
+        text-align: center;
+        padding-top: 10px;
+    }
 }
 
 .form__promo-note::before {
@@ -240,20 +329,125 @@ select > .placeholder {
     background-size: 11px 8px;
     top: 19px;
     left: -17px;
+    @media (max-width: 600px) {
+        top: 13px;
+    }
 }
 
-.form__label--promo {
+.form__price {
+    font-family: $firasans-semibold;
+    color: $text-dark;
+    max-width: 150px;
+    @media (max-width: 600px) {
+        max-width: 100px;
+        font-size: 10px;
+        order: 2;
+    }
+    
+}
+
+.form__hidden {
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.form__price--value {
+    color: $opposite;
+    font-size: 19px;
+    margin-top: 5px;
+    line-height: 25px;
+}
+
+.form__button {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+// form for autors page
+
+.form--autors {
+    .form__wrapper {
+        display: block;
+    }
+    .form__note {
+        max-width: none;
+        background-image: none;
+        padding-left: 20px;
+        &::before {
+            content: none;
+        }
+    }
+}
+
+
+
+textarea {
+    min-height: 67px;
+    resize: none;
+}
+
+.form__item {
+    position: relative;
+}
+
+.form__item .form__item-label {
+    position: absolute;
+    bottom: 100%;
+    top: -13px;
+    padding-left: 17px;
+    right: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 100%;
+    font-size: 12px;
+    color: #434448;
+    pointer-events: none;
+    cursor: text;
+    transform: translate3d(0,28px,0) scale(1);
+    transition: transform .4s cubic-bezier(.25,.8,.25,1);
+    transform-origin: left top;
+}
+
+.form__item.focused .form__item-label {
+    transform: translate3d(0,15px,0) scale(.75);
+    transition: width cubic-bezier(.25,.8,.25,1) .4s;
+    transition: transform cubic-bezier(.25,.8,.25,1) .4s, width cubic-bezier(.25,.8,.25,1) .4s;
+    transition: transform cubic-bezier(.25,.8,.25,1) .4s, width cubic-bezier(.25,.8,.25,1) .4s;
+    padding-left: 24px;
+}
+
+// styles for promocode-input
+
+.form__promo .form__input--promo {
+// .form__promo .form__item-label--promo {
     position: absolute;
     top: 0;
     left: 0;
     display: none;
+    width: 100%;
 
 }
 
-.form__promo.active .form__label--promo {
+.form__promo .form__item-label--promo {
+    color: transparent;
+}
+
+.form__promo.active .form__input--promo {
     display: block;
+}
+
+.form__promo.active .form__item-label--promo {
+    color: #434448;
+    z-index: 99999;
 }
 
 .form__promo.active .form__promo-note {
     display: none;
 }
+
+
+

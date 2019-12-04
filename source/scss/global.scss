@@ -118,6 +118,8 @@ ul:not([class]) {
     list-style-type: none;
     margin: 0;
     padding-bottom: 15px;
+    padding-left: 60px;
+    padding-top: 15px;
 }
 
 p {
@@ -129,13 +131,14 @@ p {
 
 ul:not([class]) li {
         padding-bottom: 15px;
+        position: relative;
         &::before {
             content: url('../img/circle-min.png');
             width: 21px;
             height: 21px;
-            position: relative;
-            top: 4px;
-            right: 15px;
+            position: absolute;
+            top: -2px;
+            left: -35px;
         }
         p {
             padding: 0;
@@ -190,7 +193,7 @@ ul:not([class]) li {
         max-width: none;
     }
     @media (max-width: 768px) {
-        padding-top: 70px;
+        // padding-top: 70px;
     }
 }
 

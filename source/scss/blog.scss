@@ -1,6 +1,6 @@
 .blog {
     @include list-norm;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     @media (max-width: 768px) {
         margin-bottom: 0;
     }
@@ -35,15 +35,16 @@
         height: 100%;
         overflow: hidden;
         border-top-right-radius: 0;
-    }
-    @media (max-width: 768px) {
-        flex-direction: column;
-        img {
-            max-width: 100%;
+        @media (max-width: 600px) {
+            width: 100%;
+            max-width: none;
             height: auto;
             border-bottom-right-radius: 0;
             border-bottom-left-radius: 0;
         }
+    }
+    @media (max-width: 600px) {
+        flex-direction: column;
     }
 }
 
@@ -52,6 +53,11 @@
     width: 254px;
     height: auto;
     font-size: 0;
+    @media (max-width: 600px) {
+        width: 100%;
+        max-height: 200px;
+        overflow: hidden;
+    }
 }
 
 .blog__text {
@@ -150,13 +156,26 @@
     
 }
 
-.blog__ad-img {
-    width: 300px;
+.blog__ad-item .blog__ad-img {
+    width: 245px;
     height: auto;
     float: right;
-    position: relative;
+    position: absolute;
     transform: scale(-1, 1);
-    bottom: -40px
+    bottom: -85px;
+    right: 60px;
+    @media (max-width: 1024px) {
+        right: 0;
+        width: 200px;
+    }
+    @media (max-width:768px) {
+        right: -57px;
+        width: 150px;
+        bottom: -20px;
+    }
+    @media (max-width:600px) {
+        bottom: 50px;
+    }
 }
 
 .blog__ad-title {
@@ -238,10 +257,12 @@
     background-color: $accent-light;
     padding: 22px;
     border-radius: 12px;
+    margin-left: 10px;
     // временно
     width: 280px;
     height: 662px;
     @media (max-width: 768px) {
         margin-bottom: 40px;
+        margin-left: 0;
     }
 }

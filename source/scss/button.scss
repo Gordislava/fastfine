@@ -135,3 +135,31 @@
         padding: 19px 30px;
     }
 }
+
+.button-reviews {
+    display: inline-block;
+    padding: 16px 76px 16px 53px;
+    border-radius: 25px;
+    position: relative;
+    &::after {
+        @include pseudo;
+        width: 27px;
+        height: 24px;
+        background-image: url("../img/icons/chat.svg");
+        background-repeat: no-repeat;
+        background-size: 27px 24px;
+        top: 50%;
+        margin-top: -12px;
+        right: 30px;
+        opacity: 0.4;
+    }
+    &:hover {
+       background-color: $accent-dark;
+       color: $text-dark;
+       
+    }
+    &:active {
+        background-color: $accent-dark;
+        box-shadow: inset 0px 3px 7px 0 rgba(0, 0, 0, 0.35);
+    }
+}
