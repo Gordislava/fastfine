@@ -450,4 +450,155 @@ textarea {
 }
 
 
+// form for contacts-page
 
+.form--contacts {
+    background-color: transparent;
+    box-shadow: none;
+    max-width: 590px;
+    padding: 0;
+    margin: auto;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .form__wrapper {
+        display: block;
+    }
+    .form__note {
+        max-width: none;
+        background-image: none;
+        padding-left: 20px;
+        &::before {
+            content: none;
+        }
+    }
+}
+
+.form--contacts .form__input {
+    padding: 27px 20px 10px 17px;
+    font-size: 16px;
+    font-family: $firasans-medium;
+}
+
+.form--contacts .form__item-label {
+    font-size: 14px;
+    color: $text-dark;
+}
+
+.form--contacts .form__item .form__item-label {
+    position: absolute;
+    bottom: 100%;
+    top: -13px;
+    min-height: 25px;
+    padding-left: 17px;
+    right: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+    color: $text-dark;
+    pointer-events: none;
+    cursor: text;
+    transform: translate3d(0,34px,0) scale(1);
+    transition: transform .4s cubic-bezier(.25,.8,.25,1);
+    transform-origin: left top;
+}
+
+.form--contacts .form__item.focused .form__item-label {
+    transform: translate3d(0,25px,0) scale(.75);
+    transition: width cubic-bezier(.25,.8,.25,1) .4s;
+    transition: transform cubic-bezier(.25,.8,.25,1) .4s, width cubic-bezier(.25,.8,.25,1) .4s;
+    transition: transform cubic-bezier(.25,.8,.25,1) .4s, width cubic-bezier(.25,.8,.25,1) .4s;
+    padding-left: 24px;
+}
+
+.form--contacts .form__input-wrapper {
+    @media (max-width: 600px) {
+        flex-direction: column;
+        width: 100%;
+    }
+    .form__label {
+        @media (max-width: 600px) {
+        width: 100%;
+    }
+    }
+}
+
+.form__checkbox-item {
+    text-align: center;
+}
+
+.form__input-checkbox {
+    left: 27px;
+    z-index: 24;
+    width: 20px;
+    top: 5px;
+    height: 20px;
+    opacity: 0;
+}
+
+.form__checkbox-item a {
+    color: #80808c;
+    text-decoration: underline;
+}
+
+.form--contacts .form__input-checkbox {
+    position: relative;
+}
+
+.form--contacts .form__input-checkbox + label {
+    padding-left: 30px;
+    font-size: 11px;
+    line-height: 18px;
+    color: #80808c;
+    position: relative;
+}
+
+.form__input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 1.5px;
+    border: solid 1px #ecedef;
+    background-color: #f8f8fa;
+    left: 0;
+    top: -6px;
+}
+
+ label::after {
+    display: none;
+}
+
+
+.form__input-checkbox:checked ~ label::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 9px;
+    background-image: url("../img/check-symbol.png");
+    background-repeat: no-repeat;
+    background-size: 11px 9px;
+    background-position: center;
+    z-index: 10;
+    left: 6px;
+    top: 1px;
+    display: block;
+
+}
+
+.form--contacts__button-wrapper {
+    margin: auto;
+    margin-top: 22px;
+}
+
+.form-section {
+    width: auto;
+    max-width: 900px;
+    padding: 10px;
+    border-radius: 12px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23D3D5DC69' stroke-width='4' stroke-dasharray='8%2c 16' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
