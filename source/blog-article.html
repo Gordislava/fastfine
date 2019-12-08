@@ -139,8 +139,10 @@
                                 обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что постоянный количественный
                                 рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
                                 <picture>
-                                    <source media="(max-width: 600px)"srcset="img/article-mobile.jpg">
-                                    <img src="img/article1.jpg" alt="">
+                                    <source type="image/webp" media="(max-width: 600px)" data-srcset="img/article-mobile.webp">
+                                    <source type="image/webp" data-srcset="img/article1.webp">
+                                    <source media="(max-width: 600px)" data-srcset="img/article-mobile.jpg">
+                                    <img data-src="img/article1.jpg" alt="Main article image" class="lazy">
                                 </picture>
                                 <p>Специалисты нашей компании окажут своевременную и квалифицированную помощь студентам в написании работ вне зависимости
                                 от формы обучения, специальности, учебного заведения и поставленных сроков. Каждый, кто хотя бы однажды пытался искать
@@ -179,7 +181,59 @@
                             </div>
                         </section>
                         <section class="blog__form">
-                            <p>asdsds</p>
+                                <form action="" class="form">
+                                    <h3 class="form__title">Узнайте стоимость работы онлайн</h3>
+                                    <div class="form__wrapper">
+                                       <div class="form__input-wrap">
+                                           <select name="subject" id="" class="form__select">
+                                                <option class="form-option placeholder" selected disabled>Вид работы</option>
+                                            <option value="" class="form__option">Дипломная работа</option>
+                                            <option value="" class="form__option" style="font-size: 12px; color: #434448;">Курсовая работа</option>
+                                            <option value="" class="form__option">Отчет по практике</option>
+                                           </select>
+                                       </div>
+                                    <div class="form__input-whitespace-wrapper">
+                                        <div class="form__input-wrap">
+                                            <select name="subject" id="" class="form__select form__select--volume">
+                                                <option class="form-option placeholder" selected disabled>Объем</option>
+                                                <option value="" class="form__option">1-10</option>
+                                                <option value="" class="form__option" style="font-size: 12px; color: #434448;">11-20</option>
+                                                <option value="" class="form__option">20-80</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap form__input-wrap--type">
+                                            <select name="subject" id="" class="form__select form__select--type">
+                                                <option value="" class="form__option">Страниц</option>
+                                                <option value="" class="form__option" >Задач</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                       <div class="form__input-wrap"><input type="text" class="form__input form__autocomplite" placeholder="Предмет"></div>
+                                    </div>
+                                    <div class="form__wrapper form__wrapper--price">
+                                        
+                                        <p class=" form__note--mobile">Индивидуальная оценка: info@fastfine.ru
+                                            <a>Подробнее</a>
+                                        </p>
+                                        <div class="form__price">
+                                            <span>Стоимость <span class="form__hidden">работы</span> от:</span>
+                                            <span class="form__price--value">
+                                                1500 руб.
+                                            </span>
+                                        </div>
+                                        <div class="form__item form__label form__promo">
+                                            <label class="form__item-label form__item-label--promo">Промокод</label>
+                                            <input type="text" class="form__input form__input--promo">
+                                            <p class="form__promo-note">У меня есть промокод</p>
+                                        </div>
+                                    </div>
+                                        <div class="form__wrapper form__wrapper-button">
+                                            <button class="button button-request form__button">Узнать точную цену</button>
+                                            <p class="form__note">Для индивидуальной оценки нетипичные заказы просьба высылать на <span>Email:
+                                            info@fastfine.ru</span> <a>Подробнее</a>
+                                            </p>
+                                        </div>
+                                </form>
                         </section>
                     </div>
                     
@@ -192,8 +246,8 @@
                                 <ul class="slider glide__slides">
                                     <li class="slider__item glide__slide">
                                         <picture>
-                                            <source type="image/webp" srcset="img/blog1.webp">
-                                            <img src="img/blog1.jpg" alt="Фото">
+                                            <source type="image/webp" data-srcset="img/blog1.webp">
+                                            <img src="img/blog1-low.jpg" data-src="img/blog1.jpg" alt="Фото" class="lazy">
                                         </picture>
                                         <div class="slider__text">
                                             <h3 class="slider__title"><a>Открытое обучение - один из эффективных форматов</a></h3>
@@ -210,10 +264,10 @@
                                         </div>
                                     </li>
                                     <li class="slider__item glide__slide">
-                                        <picture>
-                                            <source type="image/webp" srcset="img/blog1.webp">
-                                            <img src="img/blog1.jpg" alt="Фото">
-                                        </picture>
+                                            <picture>
+                                                <source type="image/webp" data-srcset="img/blog1.webp">
+                                                <img src="img/blog1-low.jpg" data-src="img/blog1.jpg" alt="Фото" class="lazy">
+                                            </picture>
                                         <div class="slider__text">
                                             <h3 class="slider__title"><a>первый слайд - один из эффективных форматов</a></h3>
                                             <div class="slider__info-wrapper">
@@ -229,10 +283,10 @@
                                         </div>
                                     </li>
                                     <li class="slider__item glide__slide">
-                                        <picture>
-                                            <source type="image/webp" srcset="img/blog1.webp">
-                                            <img src="img/blog1.jpg" alt="Фото">
-                                        </picture>
+                                            <picture>
+                                                <source type="image/webp" data-srcset="img/blog1.webp">
+                                                <img src="img/blog1-low.jpg" data-src="img/blog1.jpg" alt="Фото" class="lazy">
+                                            </picture>
                                         <div class="slider__text">
                                             <h3 class="slider__title"><a>второйн из эффективных форматов</a></h3>
                                             <div class="slider__info-wrapper">
@@ -248,10 +302,10 @@
                                         </div>
                                     </li>
                                     <li class="slider__item glide__slide">
-                                        <picture>
-                                            <source type="image/webp" srcset="img/blog1.webp">
-                                            <img src="img/blog1.jpg" alt="Фото">
-                                        </picture>
+                                            <picture>
+                                                <source type="image/webp" data-srcset="img/blog1.webp">
+                                                <img src="img/blog1-low.jpg" data-src="img/blog1.jpg" alt="Фото" class="lazy">
+                                            </picture>
                                         <div class="slider__text">
                                             <h3 class="slider__title"><a>третий обучение - один из эффективных форматов</a></h3>
                                             <div class="slider__info-wrapper">
@@ -377,6 +431,7 @@
     </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/lazyload.min.js"></script>
     <script src="js/script.js"></script>
     <script>
         new Glide('.glide', {
@@ -384,14 +439,20 @@
             startAt: 1,
             perView: 4,
             gap: 20,
+            perTouch: 3,
             breakpoints: {
                 1024: {
                     perView: 3
                 },
                 768: {
-                    perView: 2
+                    perView: 2,
+                    gap: 50
                 },
                 600: {
+                    perView: 2,
+                    gap: 20
+                },
+                425: {
                     perView: 1
                 }
             }

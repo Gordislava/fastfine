@@ -10,8 +10,10 @@
 .blog__container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     @media (max-width: 768px) {
         flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -178,6 +180,16 @@
     }
 }
 
+.blog__ad-item .blog__ad-img.blog__ad-img--blog-page {
+    bottom: 0;
+    @media (max-width:768px) {
+        right: -35px;
+    }
+    @media (max-width:600px) {
+        bottom: 15px;
+    }
+}
+
 .blog__ad-title {
     font-size: 23px;
     font-family: $firasans-bold;
@@ -229,7 +241,6 @@
     position: relative;
     margin-right: 45px;
     @media (max-width: 425px) {
-        width: 100%;
         margin-right: 0;
         padding-left: 70px;
     }
@@ -253,16 +264,40 @@
     }
 }
 
-.blog__form {
-    background-color: $accent-light;
-    padding: 22px;
+.blog__form { 
     border-radius: 12px;
     margin-left: 10px;
-    // временно
-    width: 280px;
-    height: 662px;
-    @media (max-width: 768px) {
+    max-width: 280px;
+    @media (max-width: 1220px) {
         margin-bottom: 40px;
         margin-left: 0;
+        margin:  0 auto 40px;
+    }
+    .form {
+        padding: 18px 22px 22px;
+        background-color: $accent-light;
+    }
+    .form__wrapper {
+        flex-direction: column;
+    }
+    .form__input-wrap,
+    .form__input-whitespace-wrapper,
+    .form__promo {
+        width: 100%;
+    }
+    .form__promo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .form__price {
+        order: 2;
+        text-align: center;
+    }
+    .form__button {
+        margin-bottom: 19px;
+        padding: 19px 60px 19px 40px;
     }
 }
+

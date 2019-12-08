@@ -52,3 +52,18 @@ function initInputs() {
         _loop_1(i);
     }
 }
+
+var promoButton = document.querySelector(".form__promo");
+
+promoButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    promoButton.classList.add("active");
+  });
+
+var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy"
+});
+// lazyLoadInstance.update();
+
+
+  

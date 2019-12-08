@@ -55,8 +55,15 @@
     }
 }
 
-.header__phone--general-page a {
+.header-block .header__phone a,
+.header-block .header__phone-mobile a {
     color: $bg-color;
+}
+
+.header-block .header__phone a {
+    @media (max-width: 768px) {
+        color: $text-color;
+    }
 }
 
 .header__phone-mobile {

@@ -58,6 +58,16 @@
     }
 }
 
+.form__autocomplete {
+    color: $text-dark;
+}
+
+input::placeholder,
+input::-moz-placeholder  {
+    color: $text-dark;
+    opacity: 1;
+}
+
 .form__label.invalid .form__input {
     border-color: $input-wrong;
 }
@@ -100,18 +110,6 @@
     width: 100%;
     resize: none;
 }
-
-// .form__input::placeholder {
-//     color: #434448;
-//     font-size: 12px;
-// }
-
-// .form__input:focus::placeholder {
-//     font-size: 11px;
-//     position: relative;
-
-// }
-
 
 .form__input {
     transition: all 0.3s ease-in;
@@ -212,10 +210,9 @@ input:active, textarea:active {outline:none;}
         }
 }
 
-
 .form__select {
     width: 100%;
-    padding: 14px 17px;
+    padding: 14px 15px;
     border-radius: 2px;
     border: solid 1px #ecedef;
     background-color: $input-gray;
@@ -243,7 +240,7 @@ input:active, textarea:active {outline:none;}
     &::after {
         @include pseudo;
         width: 33px;
-        height: 43px;
+        height: 44px;
         background-color: #f8f9fa;
         background-image: url("../img/icons/sort-down.svg");
         background-repeat: no-repeat;
@@ -365,6 +362,17 @@ select > .placeholder {
     margin-top: 15px;
 }
 
+// styles for autocomplete
+
+.autocomplete {
+    background: #f8f8fa;
+    z-index: 1000;
+    font-family: $firasans;
+    font-size: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ecedef;
+}
+
 // form for autors page
 
 .form--autors {
@@ -423,13 +431,11 @@ textarea {
 // styles for promocode-input
 
 .form__promo .form__input--promo {
-// .form__promo .form__item-label--promo {
     position: absolute;
     top: 0;
     left: 0;
     display: none;
     width: 100%;
-
 }
 
 .form__promo .form__item-label--promo {

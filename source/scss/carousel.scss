@@ -3,6 +3,9 @@
     max-width: 1920px;
     margin: 0 auto;
     background-color: $light-blue;
+    @media (max-width: 1370px) {
+        padding-bottom: 20px;
+    }
 }
 
 .carousel {
@@ -40,3 +43,43 @@
     }
 }
 
+.carousel-blog .glide__arrow {
+    @media (max-width: 1370px) {
+        top: auto;
+        bottom: -75px
+    }
+}
+
+.carousel-blog .pagination {
+    display: none;
+    @media (max-width: 600px) {
+        display: block;
+        margin-top: -30px;
+    }
+
+}
+
+.carousel-blog .pagination__item--more {
+    background-color: transparent;
+}
+
+.carousel-blog .glide__arrow--left {
+    @media (max-width: 500px) {
+        left: 35%;
+        margin-left: -5%;
+    }
+    @media (max-width: 400px) {
+        left: 30%;
+    }
+}
+
+.carousel-blog .glide__arrow--right {
+    @media (max-width: 500px) {
+        right: 35%;
+        margin-right: -5%;
+    }
+    @media (max-width: 400px) {
+        right: 30%;
+        margin-right: -5%;
+    }
+}

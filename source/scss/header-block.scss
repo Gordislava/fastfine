@@ -1,7 +1,5 @@
 .header-block {
     max-width: 1920px;
-    // background-image: url("../img/Иллюстрации/main_image.svg") no-repeat top right, url("../img/bg-gradient.png") no-repeat ;
-
     background-image:   url("../img/Иллюстрации/main_image.svg"), 
                         url("../img/background-gradient.png");
     background-repeat: no-repeat, no-repeat;
@@ -9,6 +7,26 @@
     position: relative;
     background-position: right top, left bottom;
     background-size: 903px auto, auto;
+    @media (max-width: 1600px) {
+        background-position: right -200px top, left bottom;
+    }
+    @media (max-width: 1440px) {
+        background-position: right -300px top, left bottom;
+    }
+    @media (max-width: 1024px) {
+        background-position: right -100px top, left bottom;
+        background-size: 450px auto, auto;
+    }
+    @media (max-width: 768px) {
+        background-position: right -150px top, left bottom;
+        background-size: 450px auto, auto;
+    }
+    @media (max-width: 425px) {
+        background-image:   url("../img/general-bg-small.png"), 
+                            url("../img/background-gradient.png");
+        background-position: right top, left bottom;
+        background-size: 160px auto, auto;
+    }
     &::before {
         @include pseudo;
         width: 76px;
@@ -19,7 +37,7 @@
         top: 200px;
         left: 90px;
         z-index: -1;
-        @media (max-width:768px) {
+        @media (max-width:1280px) {
             display: none;
         }
     }

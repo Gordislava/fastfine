@@ -52,7 +52,7 @@
                         <i></i>
                     </label>
                     <div class="logo">
-                        <img src="img/logo.svg" alt="FastFine" class="logo__img">
+                        <img data-src="img/logo.svg" alt="FastFine" class="lazy logo__img">
                     </div>
                     <div class="header__phone-mobile">
                         <a href="tel:880077714758">8 800 777 147 58</a>
@@ -270,7 +270,7 @@
                                 </div>
                                 <a class="button button--size-middle card__button" href="#">Заказать</a>
                             </li>
-                            <li class="services__item card card__discount">
+                            <li class="lazy services__item card card__discount" data-bg="url('img/discount.png')">
                                 <p class="card__discount-text">Сделайте заказ прямо сейчас и получите </p>
                                 <p class="card__discount-text card__discount-text--accent">Скидку 10<span>%</span></p>
                                 <a class="button button--size-middle card__button" href="#">Заказать</a>
@@ -331,7 +331,7 @@
                                                         <span class="slider__info--icon"></span>
                                                         <span>Просмотров:</span> 1 874</div>
                                                 </div>
-                                                <p class="slider__description"> – на сегодняшний день, один из самых эффективных учебных форматов.</p> 
+                                                <p class="slider__description">Открытое обучение – на сегодняшний день, один из самых эффективных учебных форматов.</p> 
                                             </div>
                                         </li>
                                         <li class="slider__item glide__slide">
@@ -354,7 +354,7 @@
                                             </li>
                                             <li class="slider__item glide__slide">
                                                     <picture>
-                                                        <source type="image/webp" srcset="img/blog1.webp">
+                                                        <source type="image/webp" data-srcset="img/blog1.webp">
                                                         <img src="img/blog1.jpg" alt="Фото">
                                                     </picture>
                                                     <div class="slider__text">
@@ -377,6 +377,17 @@
                                 <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
                             </div>
                         </div>
+                        <section class="pagination pagination--position-end">
+                            <div class="pagination__list">
+                                <div class="pagination__item current"><a href="#" class="pagination__link">1</a></div>
+                                <div class="pagination__item"><a href="#" class="pagination__link">2</a></div>
+                                <div class="pagination__item pagination__item--more">
+                                    <span class="dot">...</span>
+                                    <span class="line">/</span>
+                                </div>
+                                <div class="pagination__item pagination__item--last"><a href="#" class="pagination__link ">30</a></div>
+                                </div>
+                        </section>
                     </div>
                 </section>
             </main>
@@ -480,6 +491,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/lazyload.min.js"></script>
     <script src="js/script.js"></script>
     <script>
         new Glide('.glide', {
@@ -494,8 +506,9 @@
                 768: {
                 perView: 2
                 },
-                600: {
-                perView: 1
+                450: {
+                perView: 1,
+                gap: 10
                 }
             }
             }).mount();

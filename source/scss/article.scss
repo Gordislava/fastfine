@@ -5,6 +5,12 @@
     }
 }
 
+.blog__container {
+    @media (max-width: 1220px) {
+        flex-direction: column;
+    }
+}
+
 .article .page-title {
     margin: 0;
     padding: 0;
@@ -63,4 +69,7 @@
 
 .article-page .blog__form {
     margin-top: 20px;
+    @media (max-width: 1220px) {
+        margin: -20px auto 40px;
+    }
 }

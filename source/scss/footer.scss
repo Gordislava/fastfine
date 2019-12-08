@@ -160,6 +160,14 @@
     }
 }
 
+.accordeon.active {
+    &::after {
+        @media (max-width: 768px) {
+            transform: rotate(180deg);
+        }
+    }
+}
+
 .panel {
     @media (max-width: 768px) {
         max-height: 0;

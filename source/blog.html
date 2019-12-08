@@ -128,9 +128,9 @@
                         <section class="container--size-small blog">
                             <ul class="blog">
                                 <li class="blog__item">
-                                    <picture>
-                                        <!-- <source type="image/webp" srcset="img/blog1.webp"> -->
-                                        <img src="img/blog-2.jpg" alt="Фото">
+                                    <picture> 
+                                        <source type="image/webp" data-srcset="img/blog-2.webp">
+                                        <img data-src="img/blog-2.jpg" alt="Фото" class="lazy">
                                     </picture>
                                     <div class="blog__text">
                                         <h3 class="blog__title"><a>Открытое обучение – на сегодняшний день, один из основных и самых эффективных учебных форматов</a></h3>
@@ -147,10 +147,9 @@
                                     </div>
                                 </li>
                                 <li class="blog__item">
-                                    <picture>
-                                        
-                                        <!-- <source type="image/webp" srcset="img/blog1.webp"> -->
-                                        <img src="img/blog-2.jpg" alt="Фото">
+                                    <picture> 
+                                        <source type="image/webp" data-srcset="img/blog-2.webp">
+                                        <img data-src="img/blog-2.jpg" alt="Фото" class="lazy">
                                     </picture>
                                     <div class="blog__text">
                                         <h3 class="blog__title"><a>Открытое обучение – на сегодняшний день, один из основных и самых эффективных учебных
@@ -168,11 +167,12 @@
                                             финансовых и административных условий. Равным образом начало повседневной работы по формированию</p>
                                     </div>
                                 </li>
-                                <li class="blog__item blog__ad-item">
-                                    <!-- <img src="img/Иллюстрации/boy.svg" alt="" class="blog__ad-img"> -->
+                                <li class="blog__item blog__ad-item article__ad-item">
+                                    <img src="img/Иллюстрации/boy-1.svg" alt="Photo" class="blog__ad-img blog__ad-img--blog-page">
                                     <div class="blog__ad-text">
                                         <h3 class="blog__ad-title">Закажите отчет по практике и получите скидку!</h3>
-                                        <p class="blog__ad-note">Хотите скидку на отчёт по практике? Сделайте заказ до 30 ноября и получите до 30% скидки.</p>
+                                        <p class="blog__ad-note">Хотите скидку на отчёт по практике? Сделайте заказ до 30 ноября и получите до 30%
+                                            скидки.</p>
                                         <div class="blog__ad-button-wrap">
                                             <a href="#" class="button button-request blog__ad-button">Сделать заказ</a>
                                             <span class="blog__ad-button-note">Получи скидку прямо сейчас</span>
@@ -182,24 +182,76 @@
                             </ul>
                         </section>
                         <section class="blog__form">
-                            <p>asdsds</p>
+                            <form action="" class="form">
+                                <h3 class="form__title">Узнайте стоимость работы онлайн</h3>
+                                <div class="form__wrapper">
+                                   <div class="form__input-wrap">
+                                       <select name="subject" id="" class="form__select">
+                                            <option class="form-option placeholder" selected disabled>Вид работы</option>
+                                        <option value="" class="form__option">Дипломная работа</option>
+                                        <option value="" class="form__option" style="font-size: 12px; color: #434448;">Курсовая работа</option>
+                                        <option value="" class="form__option">Отчет по практике</option>
+                                       </select>
+                                   </div>
+                                <div class="form__input-whitespace-wrapper">
+                                    <div class="form__input-wrap">
+                                        <select name="subject" id="" class="form__select form__select--volume">
+                                            <option class="form-option placeholder" selected disabled>Объем</option>
+                                            <option value="" class="form__option">1-10</option>
+                                            <option value="" class="form__option" style="font-size: 12px; color: #434448;">11-20</option>
+                                            <option value="" class="form__option">20-80</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__input-wrap form__input-wrap--type">
+                                        <select name="subject" id="" class="form__select form__select--type">
+                                            <option value="" class="form__option">Страниц</option>
+                                            <option value="" class="form__option" >Задач</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                   <div class="form__input-wrap"><input type="text" class="form__input form__autocomplite" placeholder="Предмет"></div>
+                                </div>
+                                <div class="form__wrapper form__wrapper--price">
+                                    
+                                    <p class="form__note--mobile">Индивидуальная оценка: info@fastfine.ru
+                                        <a>Подробнее</a>
+                                    </p>
+                                    <div class="form__price">
+                                        <span>Стоимость <span class="form__hidden">работы</span> от:</span>
+                                        <span class="form__price--value">
+                                            1500 руб.
+                                        </span>
+                                    </div>
+                                    <div class="form__item form__label form__promo">
+                                        <label class="form__item-label form__item-label--promo">Промокод</label>
+                                        <input type="text" class="form__input form__input--promo">
+                                        <p class="form__promo-note">У меня есть промокод</p>
+                                    </div>
+                                </div>
+                                    <div class="form__wrapper form__wrapper-button">
+                                        <button class="button button-request form__button">Узнать точную цену</button>
+                                        <p class="form__note">Для индивидуальной оценки нетипичные заказы просьба высылать на <span>Email:
+                                        info@fastfine.ru</span> <a>Подробнее</a>
+                                        </p>
+                                    </div>
+                            </form>
                         </section>
                     </div>
                     <section class="pagination pagination--position-end">
-                        <div class="pagination__list">
-                            <div
-                                class="arrow-left pagination__item pagination__item--type-arrow pagination__item--type-arrow-left">
-                                <a href="#" class="pagination__link"><span class="visually-hidden">Вперед</span></a>
-                            </div>
-                            <div class="pagination__item"><a href="#" class="pagination__link">1</a></div>
-                            <div class="pagination__item"><a href="#" class="pagination__link">2</a></div>
-                            <div class="pagination__item"><a href="#" class="pagination__link">3</a></div>
-                            <div
-                                class="arrow-right pagination__item pagination__item--type-arrow pagination__item--type-arrow-right">
-                                <a href="#" class="pagination__link"><span class="visually-hidden">Вперед</span></a>
-                            </div>
-                        </div>
-                    </section>
+                            <div class="pagination__list">
+                                <div class="arrow-left pagination__item pagination__item--type-arrow pagination__item--type-arrow-left"><a href="#"
+                                        class="pagination__link"><span class="visually-hidden">Вперед</span></a></div>
+                                <div class="pagination__item current"><a href="#" class="pagination__link">1</a></div>
+                                <div class="pagination__item"><a href="#" class="pagination__link">2</a></div>
+                                <div class="pagination__item pagination__item--more">
+                                    <span class="dot">...</span>
+                                    <span class="line">/</span>
+                                </div>
+                                <div class="pagination__item pagination__item--last"><a href="#" class="pagination__link ">30</a></div>
+                                <div class="arrow-right pagination__item pagination__item--type-arrow pagination__item--type-arrow-right"><a href="#"
+                                        class="pagination__link"><span class="visually-hidden">Вперед</span></a></div>
+                                </div>
+                        </section>
 
                 </section>
             </main>
@@ -303,6 +355,7 @@
     </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/lazyload.min.js"></script>
     <script src="js/script.js"></script>
     <script>
         new Glide('.glide', {

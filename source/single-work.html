@@ -37,7 +37,9 @@
                             <i></i>
                         </label>
                         <div class="logo">
-                            <img src="img/logo.svg" alt="FastFine" class="logo__img">                     
+                            <a href="index.html">
+                                <img data-src="img/logo.svg" alt="FastFine" class="lazy logo__img">
+                            </a>                     
                         </div>
                         <div class="header__phone-mobile">  
                             <a href="tel:880077714758">8 800 777 147 58</a>
@@ -105,57 +107,59 @@
                                 </li>
                             </ul>
                         </section>
-                        <form action="" class="form">
-                                <h3 class="form__title">Узнайте стоимость работы онлайн</h3>
-                                <div class="form__wrapper">
-                                   <div class="form__input-wrap">
-                                       <select name="subject" id="" class="form__select">
-                                            <option class="form-option placeholder" selected disabled>Вид работы</option>
-                                        <option value="" class="form__option">Дипломная работа</option>
-                                        <option value="" class="form__option" style="font-size: 12px; color: #434448;">Курсовая работа</option>
-                                        <option value="" class="form__option">Отчет по практике</option>
-                                       </select>
-                                   </div>
-                                <div class="form__input-whitespace-wrapper">
-                                    <div class="form__input-wrap">
-                                        <select name="subject" id="" class="form__select form__select--volume">
-                                            <option class="form-option placeholder" selected disabled>Объем</option>
-                                            <option value="" class="form__option">1-10</option>
-                                            <option value="" class="form__option" style="font-size: 12px; color: #434448;">11-20</option>
-                                            <option value="" class="form__option">20-80</option>
-                                        </select>
+                        <div class="form-section">
+                            <form action="" class="form">
+                                    <h3 class="form__title">Узнайте стоимость работы онлайн</h3>
+                                    <div class="form__wrapper">
+                                       <div class="form__input-wrap">
+                                           <select name="subject" id="" class="form__select">
+                                                <option class="form-option placeholder" selected disabled>Вид работы</option>
+                                            <option value="" class="form__option">Дипломная работа</option>
+                                            <option value="" class="form__option" style="font-size: 12px; color: #434448;">Курсовая работа</option>
+                                            <option value="" class="form__option">Отчет по практике</option>
+                                           </select>
+                                       </div>
+                                    <div class="form__input-whitespace-wrapper">
+                                        <div class="form__input-wrap">
+                                            <select name="subject" id="" class="form__select form__select--volume">
+                                                <option class="form-option placeholder" selected disabled>Объем</option>
+                                                <option value="" class="form__option">1-10</option>
+                                                <option value="" class="form__option" style="font-size: 12px; color: #434448;">11-20</option>
+                                                <option value="" class="form__option">20-80</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap form__input-wrap--type">
+                                            <select name="subject" id="" class="form__select form__select--type">
+                                                <option value="" class="form__option">Страниц</option>
+                                                <option value="" class="form__option" >Задач</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="form__input-wrap form__input-wrap--type">
-                                        <select name="subject" id="" class="form__select form__select--type">
-                                            <option value="" class="form__option">Страниц</option>
-                                            <option value="" class="form__option" >Задач</option>
-                                        </select>
+                                       <div class="form__input-wrap"><input type="text" class="form__input form__autocomplete" placeholder="Предмет" style="color: #030715;"></div>
                                     </div>
-                                </div>
-                                   <div class="form__input-wrap"><input type="text" class="form__input form__autocomplite" placeholder="Предмет"></div>
-                                </div>
-                                <div class="form__wrapper form__wrapper--price">
-                                    <p class="form__note">Для индивидуальной оценки нетипичные заказы просьба высылать на <span>Email:
-                                        info@fastfine.ru</span> <a>Подробнее</a>
-                                    </p>
-                                    <p class=" form__note--mobile">Индивидуальная оценка: info@fastfine.ru
-                                        <a>Подробнее</a>
-                                    </p>
-                                    <div class="form__price">
-                                        <span>Стоимость <span class="form__hidden">работы</span> от:</span>
-                                        <span class="form__price--value">
-                                            1500 руб.
-                                        </span>
+                                    <div class="form__wrapper form__wrapper--price">
+                                        <p class="form__note">Для индивидуальной оценки нетипичные заказы просьба высылать на <span>Email:
+                                            info@fastfine.ru</span> <a>Подробнее</a>
+                                        </p>
+                                        <p class=" form__note--mobile">Индивидуальная оценка: info@fastfine.ru
+                                            <a>Подробнее</a>
+                                        </p>
+                                        <div class="form__price">
+                                            <span>Стоимость <span class="form__hidden">работы</span> от:</span>
+                                            <span class="form__price--value">
+                                                1500 руб.
+                                            </span>
+                                        </div>
+                                        <div class="form__item form__label form__promo">
+                                            <label class="form__item-label form__item-label--promo">Промокод</label>
+                                            <input type="text" class="form__input form__input--promo">
+                                            <p class="form__promo-note">У меня есть промокод</p>
+                                        </div>
                                     </div>
-                                    <div class="form__item form__label form__promo">
-                                        <label class="form__item-label form__item-label--promo">Промокод</label>
-                                        <input type="text" class="form__input form__input--promo">
-                                        <p class="form__promo-note">У меня есть промокод</p>
-                                    </div>
-                                </div>
-                                    <div class="form__wrapper form__wrapper-button"><button class="button button-request form__button">Узнать точную цену</button></div>
-                        </form>
-                        <section class="advantage advantage--big advantage--page-work">
+                                        <div class="form__wrapper form__wrapper-button"><button class="button button-request form__button">Узнать точную цену</button></div>
+                            </form>
+                        </div>
+                        <section class="advantage advantage--big advantage--page-work lazy" data-bg="url(img/Иллюстрации/women_collage.svg)">
                             <h2 class="page-title">Преимущества реферата под заказ</h2>
                             <ul class="advantage__list">
                                 <li class="advantage__item advantage__item--time">
@@ -192,8 +196,6 @@
                                     <p>
                                         Мы сопровождаем работу в течение выбранного вами гарантийного срока. Все коррективы вносятся оперативно.</p>
                                 </li>
-                                
-                        
                             </ul>
                         </section>
                     </section>
@@ -271,8 +273,9 @@
                         </ul>
                         <picture class="rocket-section__bg-wrap">
                             <source media="(max-width: 768px)" srcset="img/rocket-bg-small.png">
-                            <img src="img/rocket-bg.png" alt="Ракета" class="rocket-section__bg">
+                            <img src="img/rocket-bg.png" alt="Ракета" class=" rocket-section__bg">
                         </picture>
+                        
 
                     </section>
                     <section class="video-section">
@@ -283,41 +286,150 @@
                         <a href="#" class="button button-request--info video-section__button">Узнать стоимость работы за 1 минуту</a>                        
                     </section>
                     <section class="reviews-section">
-                        <div class="container">
+                        <div class="container reviews-slider--container">
                             <h2 class="page-title">Отзывы наших клиентов</h2>
                             <p class="reviews-section__note">Узнайте почему нас выбрали 727 клиентов</p>
-                            <div>
-                                <ul class="reviews__list">
-                                    <li class="reviews__item">
-                                        <div class="reviews__head">
-                                            <img src="img/avatar1.png" alt="" class="reviews__img">
-                                            <div class="reviews__head-text">
-                                                <h3 class="reviews__title">Александра Амосова</h3>
-                                                <span class="reviews__date">24 октября 2019</span>
-                                                <div class="reviews__rate">
-                                                    <div class="star active"></div>
-                                                    <div class="star active"></div>
-                                                    <div class="star active"></div>
-                                                    <div class="star active"></div>
-                                                    <div class="star inactive"></div>
+                            <div class="glide glide--reviews">
+                                <div class="glide__track" data-glide-el="track">
+                                    <ul class="reviews__list glide__slides">
+                                        <li class="reviews__item-wrapper glide__slide">
+                                            <div class="reviews__item">
+                                                <div class="reviews__head">
+                                                    <img  src="img/avatar-low.jpg" data-src="img/avatar1.png" alt="Avatar" class="lazy reviews__img">
+                                                    <div class="reviews__head-text">
+                                                        <h3 class="reviews__title">Александра Амосова</h3>
+                                                        <span class="reviews__date">24 октября 2019</span>
+                                                        <div class="reviews__rate">
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star inactive"></div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="reviews__social-link"><span class="visually-hidden">Vk</span>
+                                                    <svg class="social__icon social__icon--vk" width="40" height="40">
+                                                        <use xlink:href="#icon-vk"></use>
+                                                    </svg></a>
+                                                </div>
+                                                <div>
+                                                    <p class="reviews__text">"У меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без Рекомендую! меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без Рекомендую!"</p>
+                                                    <!-- <a href="#">Читать полностью</a> -->
                                                 </div>
                                             </div>
-                                            <a href="#" class="reviews__social-link"><span class="visually-hidden">Vk</span>
-                                            <svg class="social__icon social__icon--vk" width="40" height="40">
-                                                <use xlink:href="#icon-vk"></use>
-                                            </svg></a>
-                                        </div>
-                                        <div>
-                                            <p class="reviews__text">"У меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
-                                            Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
-                                            Работа выполнена великолепно, без Рекомендую! меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
-                                            Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
-                                            Работа выполнена великолепно, без Рекомендую!"</p>
-                                            <!-- <a href="#">Читать полностью</a> -->
-                                        </div>
-                                    </li>
-                                </ul>
+                                        </li>
+                                        <li class="reviews__item-wrapper glide__slide">
+                                            <div class="reviews__item">
+                                                <div class="reviews__head">
+                                                    <img src="img/avatar-low.jpg" data-src="img/avatar1.png" alt="Avatar" class="lazy reviews__img">
+                                                    <div class="reviews__head-text">
+                                                        <h3 class="reviews__title">Александра Амосова</h3>
+                                                        <span class="reviews__date">24 октября 2019</span>
+                                                        <div class="reviews__rate">
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star inactive"></div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="reviews__social-link"><span class="visually-hidden">Vk</span>
+                                                    <svg class="social__icon social__icon--vk" width="40" height="40">
+                                                        <use xlink:href="#icon-vk"></use>
+                                                    </svg></a>
+                                                </div>
+                                                <div>
+                                                    <p class="reviews__text">"У меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без Рекомендую! меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без Рекомендую!"</p>
+                                                    <!-- <a href="#">Читать полностью</a> -->
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="reviews__item-wrapper glide__slide">
+                                            <div class="reviews__item">
+                                                <div class="reviews__head">
+                                                    <img src="img/avatar-low.jpg" data-src="img/avatar1.png" alt="Avatar" class="lazy reviews__img">
+                                                    <div class="reviews__head-text">
+                                                        <h3 class="reviews__title">Александра Амосова</h3>
+                                                        <span class="reviews__date">24 октября 2019</span>
+                                                        <div class="reviews__rate">
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star inactive"></div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="reviews__social-link"><span class="visually-hidden">Vk</span>
+                                                    <svg class="social__icon social__icon--vk" width="40" height="40">
+                                                        <use xlink:href="#icon-vk"></use>
+                                                    </svg></a>
+                                                </div>
+                                                <div>
+                                                    <p class="reviews__text">"У меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без Рекомендую! меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без Рекомендую!"</p>
+                                                    <!-- <a href="#">Читать полностью</a> -->
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="reviews__item-wrapper glide__slide">
+                                            <div class="reviews__item">
+                                                <div class="reviews__head">
+                                                    <img src="img/avatar-low.jpg" data-src="img/avatar1.png" alt="Avatar" class="lazy reviews__img">
+                                                    <div class="reviews__head-text">
+                                                        <h3 class="reviews__title">Александра Амосова</h3>
+                                                        <span class="reviews__date">24 октября 2019</span>
+                                                        <div class="reviews__rate">
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star inactive"></div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="reviews__social-link"><span class="visually-hidden">Vk</span>
+                                                    <svg class="social__icon social__icon--vk" width="40" height="40">
+                                                        <use xlink:href="#icon-vk"></use>
+                                                    </svg></a>
+                                                </div>
+                                                <div>
+                                                    <p class="reviews__text">"У меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без Рекомендую! меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без Рекомендую!"</p>
+                                                    <!-- <a href="#">Читать полностью</a> -->
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="glide__arrows" data-glide-el="controls">
+                                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                                </div>
                             </div>
+                            <section class="pagination pagination--position-end">
+                                <div class="pagination__list">
+                                    <div class="pagination__item current"><a href="#" class="pagination__link">1</a></div>
+                                    <div class="pagination__item"><a href="#" class="pagination__link">2</a></div>
+                                    <div class="pagination__item pagination__item--more">
+                                        <span class="dot">...</span>
+                                        <span class="line">/</span>
+                                    </div>
+                                    <div class="pagination__item pagination__item--last"><a href="#" class="pagination__link ">30</a></div>
+                                    </div>
+                            </section>
                             <img src="img/slide-group.png" alt="" class="reviews__img-slide">
                         </div>
                         
@@ -326,7 +438,7 @@
                         <div class="container">
                             <h3 class="page-title">Как определяется цена реферата по юриспруденции?</h3>
                             <div class="content">
-                                <img src="img/Иллюстрации/girl.svg" alt="" class="salling-info__img">
+                                <img data-src="img/Иллюстрации/girl.svg" alt="" class="lazy salling-info__img">
                                 <p>Рефераты по юриспруденции на заказ давно стали очень востребованной услугой среди клиентов специализированных агентств и
                                 многопрофильных бирж контента. Чтобы полностью раскрыть предоставленную преподавателем тему, нужно потратить огромное
                                 количество времени на изучение нормативных актов. А если речь идет о правовой практике других стран мира, придется
@@ -472,7 +584,29 @@
             
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/lazyload.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        new Glide('.glide--reviews', {
+            type: 'carousel',
+            startAt: 1,
+            perView: 3,
+            gap: 24,
+            breakpoints: {
+                1024: {
+                perView: 2
+                },
+                768: {
+                perView: 2
+                },
+                700: {
+                perView: 1
+                }
+            }
+            }).mount();
+            
+    </script>
 </body>
 </html>
 

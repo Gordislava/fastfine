@@ -120,7 +120,7 @@
     background-position: center;
     background-size: 12px 12px;
     opacity: 0.8;
-    @media (max-width: 1220px) {
+    @media (max-width: 1370px) {
         top: 385px;
     }
     &:hover {
@@ -136,7 +136,7 @@
 .glide__arrow--left {
     background-image: url("../img/icons/go-back-left-arrow.svg");
     left: -85px;
-    @media (max-width: 1220px) {
+    @media (max-width: 1370px) {
         left: 40%;
         margin-left: -22px;
     }
@@ -146,7 +146,7 @@
     margin-right: 0;
     background-image: url("../img/icons/right-arrow-forward.svg");
     right: -85px;
-    @media (max-width: 1220px) {
+    @media (max-width: 1370px) {
         right: 40%;
         margin-right: -22px;
     }
