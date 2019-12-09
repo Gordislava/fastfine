@@ -86,14 +86,14 @@ var run = require("run-sequence");
 //       ui: false
 //     });
   
-//   //   gulp.watch("source/sass/**/*.{scss,sass}", gulp.parallel("css"));
-//   //   gulp.watch("source/*.html", gulp.parallel("copy"))
-//   //     .on("change", server.reload);
-//   // });
+//     gulp.watch("source/sass/**/*.{scss,sass}", gulp.parallel("css"));
+//     gulp.watch("source/*.html", gulp.parallel("copy"))
+//       .on("change", server.reload);
+//   });
   
-//   // gulp.task("build", gulp.series("clean", "copy", "css", "sprite", function (done) {
-//   //   done ();
-//   // }));
+//   gulp.task("build", gulp.series("clean", "copy", "css", "sprite", function (done) {
+//     done ();
+//   }));
 
 // gulp.task("start", gulp.series("css", "server"));
 
