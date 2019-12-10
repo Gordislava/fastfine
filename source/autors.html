@@ -261,7 +261,7 @@
                             </li>
                         </ul>
                     </section>
-                    <section class="advantage advantage--big">
+                    <section class="advantage advantage--big lazy" data-bg="url(img/Иллюстрации/for_authors_image_1.svg)">
                         <h2 class="page-title">Преимущества работы у нас</h2>
                         <ul class="advantage__list">
                             <li class="advantage__item advantage__item--time">
@@ -308,7 +308,7 @@
                             </li>
                         </ul>
                     </section>
-                    <section class="salling-text-section">
+                    <section class="salling-text-section lazy" data-bg=url(img/autors-2.png)>
                         <div class="container text-section">
                             <div class="container--size-small">
                                 <h3 class="page-title">Вакансии для авторов учебных работ: контрольных, курсовых, дипломных и других видов работ</h3>
@@ -442,9 +442,10 @@
         var input = document.querySelector("#phone");
         window.intlTelInput(input, {
         initialCountry: "ru",
-        autoPlaceholder: "agressive",
+        autoFormat: true,
+        autoPlaceholder: true,
         preferredCountries: ["ru", "by"],
-        utilsScript: "js/utils.js?1562189064761"
+        utilsScript: "js/utils.js"
     });
     </script>
     <script src="js/lazyload.min.js"></script>
