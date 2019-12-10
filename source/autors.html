@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/intlTelInput.min.css">
     <link rel="stylesheet" href="css/first-screen.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -121,9 +122,8 @@
                                             <input type="text" class="form__input">
                                             <span class="form__warning">Поле заполнено не верно</span>
                                         </div>
-                                        <div class="form__item form__label">
-                                            <label class="form__item-label">Телефон</label>
-                                            <input type="text" class="form__input">
+                                        <div class="iti form__item form__label">
+                                            <input type="tel" id="phone" class="form__input">
                                             <span class="form__warning">Поле заполнено не верно</span>
                                         </div>
                                     </div>
@@ -436,8 +436,20 @@
             
         </div>
     </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/intlTelInput.min.js"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+        initialCountry: "ru",
+        autoPlaceholder: "agressive",
+        preferredCountries: ["ru", "by"],
+        utilsScript: "js/utils.js?1562189064761"
+    });
+    </script>
     <script src="js/lazyload.min.js"></script>
     <script src="js/script.js"></script>
+    
 </body>
 </html>
 

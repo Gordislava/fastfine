@@ -1,19 +1,3 @@
-// var input = document.querySelector('#options-gap-input')
-
-// var glide = new Glide('.glide', {
-//   gap: input.value,
-//   perView: 4
-// })
-
-// input.addEventListener('input', function (event) {
-//   glide.update({
-//     gap: event.target.value
-//   })
-// })
-
-// glide.mount()
-
-
 
 var acc = document.getElementsByClassName("accordeon");
 var i;
@@ -63,7 +47,6 @@ promoButton.addEventListener("click", function (evt) {
 var lazyLoadInstance = new LazyLoad({
     elements_selector: ".lazy"
 });
-// lazyLoadInstance.update();
+lazyLoadInstance.update();
 
 
-  

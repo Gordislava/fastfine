@@ -8,6 +8,7 @@
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
     "bower": "^1.8.8",
+    "intl-tel-input": "^16.0.8",
     "npm": "^6.13.0",
     "run-sequence": "^2.2.1",
     "vanilla-lazyload": "^12.4.0"
