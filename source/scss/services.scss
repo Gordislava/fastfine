@@ -17,15 +17,15 @@
 
 .services__item {
     margin-bottom: 55px;
-    padding-top: 30px;
+    padding-top: 70px;
 }
 
 .services--index {
-    padding-top: 20px;
+    padding-top: 34px;
+    margin-bottom: 0;
     .page-title {
         margin: 0;
         text-align: center;
-        margin-bottom: 32px;
     }
 }
 
@@ -82,7 +82,7 @@
     font-size: 13px;
     line-height: 18px;
     color: $text-gray;
-    padding: 14px 10px 8px;
+    padding: 11px 10px 6px;
     p {
         padding: 0;
         margin: 0;
@@ -125,7 +125,8 @@
 .card__button {
     display: inline-block;
     position: absolute;
-    bottom: -30px;
+    bottom: -25px;
+    padding: 20px 70px;
 }
 
 .card__discount {

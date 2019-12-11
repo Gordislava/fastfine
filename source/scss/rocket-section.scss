@@ -1,6 +1,6 @@
 .rocket-section {
     position: relative;
-    padding-bottom: 70px;
+    padding-bottom: 22px;
     overflow: hidden;
     @media (max-width: 768px) {
         padding-bottom: 30px;
@@ -8,7 +8,8 @@
 }
 
 .rocket-section .page-title {
-    padding-top: 35px;
+    padding-top: 25px;
+    margin-top: 0;
     margin-bottom: 30px;
     text-align: center;
     @media (max-width: 768px) {
@@ -37,9 +38,11 @@
     width: 34%;
     margin-bottom: 35px;
     padding-right: 35px;
+    padding-left: 70px;
     @media (max-width: 768px) {
         background-image: none;
         text-align: left;
+        padding-left: 0;
         width: 85%;
         margin-bottom: 20px;
         padding-right: 0;
@@ -65,9 +68,27 @@
     }
 }
 
+.rocket-section .list-icons__item--money-bag,
+.rocket-section .list-icons__item--note {
+    padding-left: 0;
+    @media (max-width: 768px) {
+        padding-left: 40px;
+    }
+}
+
 .rocket-section .list-icons__item--money-bag::before {
     @media (max-width: 768px) {
         content: "1"
+    }
+}
+
+.rocket-section .list-icons__item--specialist {
+    background-position: left 70px top 10px;
+}
+
+.rocket-section .list-icons__item--specialist {
+    @media (max-width: 768px) {
+        background-position: 0 0;
     }
 }
 
@@ -80,6 +101,13 @@
 .rocket-section .list-icons__item--note::before {
     @media (max-width: 768px) {
         content: "3"
+    }
+}
+
+.rocket-section .list-icons__item--registration {
+    background-position: left 70px top 10px;
+    @media (max-width: 768px) {
+        background-position: 0 0;
     }
 }
 

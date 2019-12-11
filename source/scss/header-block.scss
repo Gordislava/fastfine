@@ -5,7 +5,7 @@
     background-repeat: no-repeat, no-repeat;
     overflow-x: hidden;
     position: relative;
-    background-position: right top, left bottom;
+    background-position: right -45px top, left bottom -125px;
     background-size: 903px auto, auto;
     @media (max-width: 1600px) {
         background-position: right -200px top, left bottom;
@@ -34,8 +34,8 @@
         background-image: url("../img/rocket.png");
         background-repeat: no-repeat;
         background-position: center;
-        top: 200px;
-        left: 90px;
+        top: 155px;
+        left: 60px;
         z-index: -1;
         @media (max-width:1280px) {
             display: none;
@@ -43,11 +43,25 @@
     }
 }
 
+.header-block.header-block--index {
+    background-image:   url("../img/Иллюстрации/main_image.svg"), 
+                        url("../img/background-gradient.png");
+    background-position: right -45px top, left bottom 10px;
+    @media (max-width: 425px) {
+        background-image:   url("../img/general-bg-small.png"), 
+                            url("../img/background-gradient.png");
+        background-position: right top, left bottom;
+        background-size: 160px auto, auto;
+    }
+}
+
+
 .header-block h1 {
     max-width: 600px;
     margin: 0;
     padding: 0;
     margin-bottom: 25px;
+    padding-top: 20px;
     @media (max-width:768px) {
         margin-bottom: 15px;
     }

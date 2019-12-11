@@ -4,7 +4,7 @@
     font-family: $firasans-bold;
     color: $text-dark;
     border-radius: 20px;
-    padding: 11px 30px 13px;
+    padding: 11px 22px 13px;
     border: none;
     transition: all .25s ease-in;
     &:hover,
@@ -45,7 +45,7 @@
 
 .button--size-middle {
     border-radius: 28px;
-    padding: 20px 65px;
+    padding: 20px 50px;
     &:hover {
        background-color: $accent-dark;
        color: $text-dark; 
