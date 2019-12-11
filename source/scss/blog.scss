@@ -147,7 +147,6 @@
     display: block;
     position: relative;
     background-color: #def5f8;
-    background-image: url("../img/pattern.png");
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: none;
@@ -181,12 +180,14 @@
 }
 
 .blog__ad-item .blog__ad-img.blog__ad-img--blog-page {
-    bottom: 0;
+    bottom: -50px;
     @media (max-width:768px) {
         right: -35px;
+        bottom: 0;
     }
     @media (max-width:600px) {
-        bottom: 15px;
+        bottom: 60px;
+        right: -60px;
     }
 }
 

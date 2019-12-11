@@ -1,4 +1,3 @@
-
 var acc = document.getElementsByClassName("accordeon");
 var i;
 
@@ -37,16 +36,40 @@ function initInputs() {
     }
 }
 
-var promoButton = document.querySelector(".form__promo");
-
-
-
 var lazyLoadInstance = new LazyLoad({
     elements_selector: ".lazy"
 });
 lazyLoadInstance.update();
 
+
+var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+        allowDropdown: true,
+        autoHideDialCode: false,
+        autoPlaceholder: 'aggressive',
+        dropdownContainer: null,
+        excludeCountries: {},
+        formatOnDisplay: true,
+        geoIpLookup: function (success) {
+            $.get("https://ipinfo.io", function () {
+            }, "jsonp").always(function (resp) {
+                var countryCode = (resp && resp.country) ? resp.country : "";
+                success(countryCode);
+            });
+        },
+        hiddenInput: "",
+        initialCountry: 'ru',
+        localizedCountries: {},
+        nationalMode: false,
+        onlyCountries: {},
+        placeholderNumberType: "MOBILE",
+        preferredCountries: ["ru", "by", "kz", 'ua', 'lv', 'lt', 'ee'],
+        separateDialCode: false,
+});
+
+var promoButton = document.querySelector(".form__promo");
+
 promoButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     promoButton.classList.add("active");
-  });
+});

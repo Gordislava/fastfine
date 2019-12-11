@@ -169,10 +169,12 @@
                 </section>
                 <section class="contacts__map">
                     <iframe
-                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A4a9bcdabab3f91dc91c07c877200e6ae9c0a1fee6aca2be8b5b175b8f56776cd&amp;source=constructor"
-                        width="100%" height="456" frameborder="0"></iframe>
+                        data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A4a9bcdabab3f91dc91c07c877200e6ae9c0a1fee6aca2be8b5b175b8f56776cd&amp;source=constructor"
+                        width="100%" height="456" frameborder="0" class="
+                        lazy">
+                    </iframe>
                 </section>
-                <section class="contacts-form">
+                <section class="contacts-form lazy" data-bg="url(img/contacts-bgr.png)">
                     <section class="container">
                         <h2 class="page-title">Есть вопросы? Напишите нам!</h2>
                         <p class="contacts-form__note">Мы с радостью ответим на все интересующие вас моменты!</p>
@@ -308,28 +310,9 @@
             
         </div>
     </div>
+    <script src="js/lazyload.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="js/script.js"></script>
-    <script>
-        new Glide('.glide', {
-            type: 'carousel',
-            startAt: 1,
-            perView: 4,
-            gap: 20,
-            breakpoints: {
-                1024: {
-                perView: 3
-                },
-                768: {
-                perView: 2
-                },
-                600: {
-                perView: 1
-                }
-            }
-            }).mount();
-            
-    </script>
 </body>
 </html>
 

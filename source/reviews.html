@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <link rel="stylesheet" href="css/first-screen.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -131,7 +130,10 @@
                             <ul class="reviews__list">
                                 <li class="reviews__item">
                                     <div class="reviews__head">
-                                        <img src="img/avatar1.png" alt="" class="reviews__img">
+                                        <picture>
+                                            <source type="image/webp" data-srcset="img/avatar1.webp">
+                                            <img data-src="img/avatar1.png" alt="" class="reviews__img lazy">
+                                        </picture>
                                         <div class="reviews__head-text">
                                             <div>
                                                 <h3 class="reviews__title">Александра Амосова</h3>
@@ -197,7 +199,10 @@
                                 </li>
                                 <li class="reviews__item">
                                     <div class="reviews__head">
-                                        <img src="img/avatar1.png" alt="" class="reviews__img">
+                                        <picture>
+                                            <source type="image/webp" data-srcset="img/avatar1.webp">
+                                            <img data-src="img/avatar1.png" alt="" class="reviews__img lazy">
+                                        </picture>
                                         <div class="reviews__head-text">
                                             <div>
                                                 <h3 class="reviews__title">Александра Амосова</h3>
@@ -263,7 +268,10 @@
                                 </li>
                                 <li class="reviews__item">
                                     <div class="reviews__head">
-                                        <img src="img/avatar1.png" alt="" class="reviews__img">
+                                        <picture>
+                                            <source type="image/webp" data-srcset="img/avatar1.webp">
+                                            <img data-src="img/avatar1.png" alt="" class="reviews__img lazy">
+                                        </picture>
                                         <div class="reviews__head-text">
                                             <div>
                                                 <h3 class="reviews__title">Александра Амосова</h3>
@@ -329,7 +337,10 @@
                                 </li>
                                 <li class="reviews__item">
                                     <div class="reviews__head">
-                                        <img src="img/avatar1.png" alt="" class="reviews__img">
+                                        <picture>
+                                            <source type="image/webp" data-srcset="img/avatar1.webp">
+                                            <img data-src="img/avatar1.png" alt="" class="reviews__img lazy">
+                                        </picture>
                                         <div class="reviews__head-text">
                                             <div>
                                                 <h3 class="reviews__title">Александра Амосова</h3>
@@ -515,28 +526,8 @@
             
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/lazyload.min.js"></script>
     <script src="js/script.js"></script>
-    <script>
-        new Glide('.glide', {
-            type: 'carousel',
-            startAt: 1,
-            perView: 4,
-            gap: 20,
-            breakpoints: {
-                1024: {
-                perView: 3
-                },
-                768: {
-                perView: 2
-                },
-                600: {
-                perView: 1
-                }
-            }
-            }).mount();
-            
-    </script>
 </body>
 </html>
 

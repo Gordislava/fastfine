@@ -134,12 +134,17 @@
 }
 
 .contacts-form {
-    background-image: url("../img/contacts-bgr.png");
     background-repeat: no-repeat;
-    background-position: left bottom -150px;
+    background-position: left bottom -200px;
     background-size: 50% auto;
     padding-top: 47px;
     padding-bottom: 40px;
+    @media (max-width:1440px) {
+        background-position: left bottom -150px;
+    }
+    @media (max-width:768px) {
+        background-size: 0 0;
+    }
 }
 
 .contacts-form .page-title {

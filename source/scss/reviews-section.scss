@@ -226,6 +226,10 @@
     }
 }
 
+.reviews .reviews__head {
+    justify-content: flex-start;
+}
+
 .reviews .reviews__item {
     width: 100%;
     border-radius: 12px;
