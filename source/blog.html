@@ -54,7 +54,9 @@
                     <i></i>
                 </label>
                 <div class="logo">
-                    <img src="img/logo.svg" alt="FastFine" class="logo__img">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="FastFine" class=" logo__img">
+                    </a>
                 </div>
                 <div class="header__phone-mobile">
                     <a href="tel:880077714758">8 800 777 147 58</a>
@@ -123,7 +125,7 @@
                     </div>
                 </section>
                 <section class="main-content">
-                    <h1 class="page-title">Блог</h1>
+                    <h1 class="page-title page-title--blog">Блог</h1>
                     <div class="blog__container">
                         <section class="container--size-small blog">
                             <ul class="blog">
@@ -251,7 +253,7 @@
                                 <div class="arrow-right pagination__item pagination__item--type-arrow pagination__item--type-arrow-right"><a href="#"
                                         class="pagination__link"><span class="visually-hidden">Вперед</span></a></div>
                                 </div>
-                        </section>
+                    </section>
 
                 </section>
             </main>
@@ -376,6 +378,13 @@
             }
         }).mount();
 
+    </script>
+    <script>
+        var promoButton = document.querySelector(".form__promo");
+        promoButton.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            promoButton.classList.add("active");
+        });
     </script>
 </body>
 

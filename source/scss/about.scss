@@ -1,14 +1,25 @@
 .about-page {
-    padding-top: 25px;
+    padding-top: 12px;
     p {
         margin-bottom: 25px;
+        line-height: 26px;
+        @media (max-width: 600px) {
+            margin-bottom: 0;
+            line-height: 18px;
+        }
     }
     .about-page__title {
         font-family: $firasans-bold;
         font-size: 27px;
         color: $text-dark;
+        @media (max-width: 600px) {
+            margin: 0;
+            margin-bottom: 15px;
+        }
     }
 }
+
+
 
 .about-page .page-title {
     font-size: 35px;
@@ -50,5 +61,14 @@
 .about-page__text-form-wrap {
     display: flex;
     justify-content: space-between;
-    
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+}
+
+.about-page__text-form-wrap .blog__form {
+    @media (max-width: 1024px) {
+        margin: auto;
+        margin-bottom: 20px;
+    }
 }

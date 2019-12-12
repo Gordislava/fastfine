@@ -9,7 +9,7 @@
         background-size: 30%;
     }
     @media (max-width: 768px) {
-        background-image: none;
+        background-size: 0px;
     }
 
     .container--size-small {
@@ -40,6 +40,10 @@
         position: relative;
         padding-left: 60px;
         line-height: 20px;
+        @media (max-width: 420px) {
+            padding-bottom: 15px;
+            font-size: 13px;
+        }
         &::before {
             content: "\2713";
             position: absolute;
@@ -97,7 +101,7 @@
 
 .salling-info {
     background-color: $light-blue;
-    background-image: url("../img/bg-blue.png");
+    // background-image: url("../img/bg-blue.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: right top;
@@ -110,7 +114,7 @@
         
     }
     @media (max-width: 600px) {
-        background-image: none;
+        background-size: 0;
     }
     .page-title {
         margin: 0;
@@ -128,6 +132,11 @@
             flex-direction: column;
             justify-content: space-between;
             padding-bottom: 30px;
+        }
+        p {
+            padding-top: 10px;
+            padding-bottom: 15px;
+            line-height: 26px;
         }
     }
 }

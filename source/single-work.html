@@ -141,7 +141,7 @@
                                         <p class="form__note">Для индивидуальной оценки нетипичные заказы просьба высылать на <span>Email:
                                             info@fastfine.ru</span> <a>Подробнее</a>
                                         </p>
-                                        <p class=" form__note--mobile">Индивидуальная оценка: info@fastfine.ru
+                                        <p class=" form__note--mobile">Индивидуальная оценка: <span>info@fastfine.ru</span>
                                             <a>Подробнее</a>
                                         </p>
                                         <div class="form__price">
@@ -606,6 +606,13 @@
             }
             }).mount();
             
+    </script>
+    <script>
+    var promoButton = document.querySelector(".form__promo");
+    promoButton.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        promoButton.classList.add("active");
+    });
     </script>
 </body>
 </html>

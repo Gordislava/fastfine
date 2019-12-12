@@ -3,6 +3,9 @@
     padding: 0;
     padding-bottom: 30px;
     text-align: center;
+    @media (max-width: 768px) {
+        padding-bottom: 20px;
+    }
 }
 
 .popular.popular--single-work h5 {

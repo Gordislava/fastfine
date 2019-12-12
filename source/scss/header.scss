@@ -7,7 +7,7 @@
     padding: 10px 20px 20px;
     flex-wrap: wrap;
     margin: 0 auto;
-    // background-color: $bg-color;
+
     @media (max-width:768px) {
         background-image: url("../img/bg-close.png");
         background-repeat: no-repeat;
@@ -16,8 +16,6 @@
         padding-top: 10px;
         padding-bottom: 10px;
         align-content: flex-start;
-        // position: fixed;
-        // z-index: 999;
     }
     @media (max-width:768px) {
         padding-left: 15px;
@@ -47,6 +45,9 @@
     font-family: $firasans-medium;
     a {
         color: $text-color;
+        &:hover {
+            opacity: 0.5;
+        }
     }
     @media (max-width: 768px) {
         display: block;
@@ -75,7 +76,6 @@
     }
     @media (max-width: 768px) {
         display: block;
-        // margin-right: 40px;
     }
 }
 

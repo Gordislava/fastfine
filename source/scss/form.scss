@@ -20,6 +20,9 @@
     font-size: 19px;
     font-family: $firasans-bold;
     color: $text-dark;
+    @media (max-width: 600px) {
+       font-size: 12px; 
+    }
 }
 
 .form__wrapper {
@@ -92,12 +95,22 @@ input::-moz-placeholder  {
     justify-content: space-between;
     .form__input-warning {
         width: 49%;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
     .form__label {
         width: 49%;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
     .form__input {
         width: 100%;
+    }
+    @media (max-width: 768px) {
+        flex-direction: column;
+        margin-bottom: 15px;
     }
 }
 
@@ -200,9 +213,15 @@ input:active, textarea:active {outline:none;}
     max-width: 145px;
     margin: 0;
     padding: 0;
+     line-height: 14px;
     a {
         color: $opposite;
         text-decoration: underline;
+        
+    }
+    span {
+        font-family: $firasans-bold;
+        margin-top: -5px;
     }
     @media (max-width: 600px) {
             display: block;
@@ -268,12 +287,16 @@ select > .placeholder {
     width: 32%;
     order:2;
     @media (max-width: 600px) {
+        flex-direction: column;
         width: 100%;
     }
 }
 
 .form__input-whitespace-wrapper .form__input-wrap {
     width: 50%;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 }
 
 .form__input-wrap--type,
@@ -389,10 +412,33 @@ select > .placeholder {
     }
 }
 
+.button__form-autors {
+    margin: auto;
+    @media (max-width: 768px) {
+        order: 2;
+    }
+}
+
+.form--autors .form__button-wrapper {
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.form--autors .form__note {
+    @media (max-width: 768px) {
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+        padding-left: 0;
+    }
+}
 
 
 textarea {
-    min-height: 67px;
+    min-height: 80px;
     resize: none;
 }
 
@@ -478,6 +524,10 @@ textarea {
         &::before {
             content: none;
         }
+    }
+    textarea {
+        min-height: 155px;
+        margin-bottom: 0;
     }
 }
 
@@ -599,6 +649,10 @@ textarea {
 .form--contacts__button-wrapper {
     margin: auto;
     margin-top: 22px;
+}
+
+.form--contacts__button-request {
+    padding: 19px 80px;
 }
 
 .form-section {

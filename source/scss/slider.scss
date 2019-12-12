@@ -130,6 +130,13 @@
     }
     @media (max-width: 768px) {
         box-shadow: 0px 5px 27px 0 rgba(21, 21, 26, 0.12);
+        
+    }
+}
+
+.glide__arrows {
+    @media (max-width: 768px) {
+        margin-top: 10px;
     }
 }
 

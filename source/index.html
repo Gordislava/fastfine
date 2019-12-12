@@ -139,8 +139,7 @@
                                         <p class="form__note">Для индивидуальной оценки нетипичные заказы просьба высылать на <span>Email:
                                             info@fastfine.ru</span> <a>Подробнее</a>
                                         </p>
-                                        <p class=" form__note--mobile">Индивидуальная оценка: info@fastfine.ru
-                                            <a>Подробнее</a>
+                                        <p class=" form__note--mobile">Индивидуальная оценка: <span>info@fastfine.ru</span>
                                         </p>
                                         <div class="form__price">
                                             <span>Стоимость <span class="form__hidden">работы</span> от:</span>
@@ -204,7 +203,28 @@
                         <ul class="services__list">
                             <li class="services__item card">
                                 <div class="card__wrapper">
-                                    <img src="img/icons/homework.svg" alt="" width="70" height="70">
+                                    <img data-src="img/icons/book.svg" alt="" width="70" height="70" class="lazy">
+                                    <h2 class="card__title">Курсовая работа</h2>
+                                </div>
+                                <div class="card__text-wrapper">
+                                    <div class="card__text card__text--term">
+                                        <div class="card__wrapper">
+                                            <p class="card__text--img">Сроки выполнения</p>
+                                            <p>от <span class="card__text-important">1 дней</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="card__text">
+                                        <div class="card__wrapper">
+                                            <p>Стоимость работы</p>
+                                            <p class="card__text-color">oт <span class="card__text-important card__text-color">290 рублей</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="button button--size-middle card__button" href="#">Заказать</a>
+                            </li>
+                            <li class="services__item card">
+                                <div class="card__wrapper">
+                                    <img data-src="img/icons/diploma.svg" alt="" width="70" height="70" class="lazy">
                                     <h2 class="card__title">Дипломная работа</h2>
                                 </div>
                                 <div class="card__text-wrapper">
@@ -225,7 +245,7 @@
                             </li>
                             <li class="services__item card">
                                 <div class="card__wrapper">
-                                    <img src="img/icons/homework.svg" alt="" width="70" height="70">
+                                    <img data-src="img/icons/homework.svg" alt="" width="70" height="70" class="lazy">
                                     <h2 class="card__title">Дипломная работа</h2>
                                 </div>
                                 <div class="card__text-wrapper">
@@ -246,28 +266,7 @@
                             </li>
                             <li class="services__item card">
                                 <div class="card__wrapper">
-                                    <img src="img/icons/homework.svg" alt="" width="70" height="70">
-                                    <h2 class="card__title">Дипломная работа</h2>
-                                </div>
-                                <div class="card__text-wrapper">
-                                    <div class="card__text card__text--term">
-                                        <div class="card__wrapper">
-                                            <p class="card__text--img">Сроки выполнения</p>
-                                            <p>от <span class="card__text-important">1 дней</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="card__text">
-                                        <div class="card__wrapper">
-                                            <p>Стоимость работы</p>
-                                            <p class="card__text-color">oт <span class="card__text-important card__text-color">290 рублей</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a class="button button--size-middle card__button" href="#">Заказать</a>
-                            </li>
-                            <li class="services__item card">
-                                <div class="card__wrapper">
-                                    <img src="img/icons/homework.svg" alt="" width="70" height="70">
+                                    <img data-src="img/icons/book1.svg" alt="" width="70" height="70" class="lazy">
                                     <h2 class="card__title">Дипломная работа</h2>
                                 </div>
                                 <div class="card__text-wrapper">
@@ -303,7 +302,7 @@
                     </section>
                     <section class="workflow workflow--index lazy" data-bg="url(img/bg-wave.png)">
                         <div class="container">
-                            <h3 class="page-title">Как мы пишем реферат по юриспруденции</h3>
+                            <h3 class="page-title">Как это работает?</h3>
                             <ul class="workflow__list">
                                 <li class="workflow__item workflow__item--contract">
                                     <img data-src="img/icons/contract.svg" alt="" class="workflow__icon lazy">
@@ -533,7 +532,7 @@
                         </div>
                         
                     </section>
-                    <section class="salling-info">
+                    <section class="salling-info lazy" data-bg="url(img/bg-blue.png)">
                         <div class="container">
                             <h3 class="page-title">Профессиональная помощь при написании студенческих работ</h3>
                             <div class="content">
@@ -701,6 +700,13 @@
             }
             }).mount();
             
+    </script>
+    <script>
+    var promoButton = document.querySelector(".form__promo");
+    promoButton.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        promoButton.classList.add("active");
+    });
     </script>
 </body>
 </html>

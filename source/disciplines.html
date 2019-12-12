@@ -37,7 +37,9 @@
                     <i></i>
                 </label>
                 <div class="logo">
-                    <img src="img/logo.svg" alt="FastFine" class="logo__img">                     
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="FastFine" class=" logo__img">
+                    </a>
                 </div>
                 <div class="header__phone-mobile">  
                     <a href="tel:880077714758">8 800 777 147 58</a>
@@ -105,7 +107,7 @@
                 </div>
             </section>
             <section class="main-content">
-                <h1 class="page-title">Предметы дипломных работ</h1>
+                <h1 class="page-title page-title--themes">Предметы дипломных работ</h1>
                 <section class="section-list container-grid">
                     <div class="col-one-fourth">
                         <div class="section-list__item">
@@ -151,13 +153,19 @@
                     </div>
                 </section>
                 <section class="pagination pagination--position-end">
-                    <ul class="pagination__list">
-                        <li class="pagination__item pagination__item--type-arrow pagination__item--type-arrow-left"><a href="#" class="pagination__link"><span class="visually-hidden">Вперед</span></a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
-                        <li class="pagination__item pagination__item--type-arrow pagination__item--type-arrow-right"><a href="#" class="pagination__link"><span class="visually-hidden">Вперед</span></a></li>
-                    </ul>
+                    <div class="pagination__list">
+                        <div class="arrow-left pagination__item pagination__item--type-arrow pagination__item--type-arrow-left"><a
+                                href="#" class="pagination__link"><span class="visually-hidden">Вперед</span></a></div>
+                        <div class="pagination__item current"><a href="#" class="pagination__link">1</a></div>
+                        <div class="pagination__item"><a href="#" class="pagination__link">2</a></div>
+                        <div class="pagination__item pagination__item--more">
+                            <span class="dot">...</span>
+                            <span class="line">/</span>
+                        </div>
+                        <div class="pagination__item pagination__item--last"><a href="#" class="pagination__link ">30</a></div>
+                        <div class="arrow-right pagination__item pagination__item--type-arrow pagination__item--type-arrow-right"><a
+                                href="#" class="pagination__link"><span class="visually-hidden">Вперед</span></a></div>
+                    </div>
                 </section>
                 <section class="popular">
                     <h5>Помощь в написании дипломной работы по предметам</h2>

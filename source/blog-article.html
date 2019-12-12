@@ -54,7 +54,9 @@
                     <i></i>
                 </label>
                 <div class="logo">
-                    <img src="img/logo.svg" alt="FastFine" class="logo__img">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="FastFine" class=" logo__img">
+                    </a>
                 </div>
                 <div class="header__phone-mobile">
                     <a href="tel:880077714758">8 800 777 147 58</a>
@@ -124,7 +126,7 @@
                 </section>
                 <section class="main-content">
                     <div class="blog__container article-page">
-                        <section class="container--size-small blog">
+                        <section class="container--size-small blog blog--article">
                             <div class="article">
                                 <h1 class="page-title">Как написать отчет по практике студенту</h1>
                                 <div class="blog__info-wrapper">
@@ -327,6 +329,17 @@
                                 <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
                             </div>
                         </div>
+                        <section class="pagination pagination--position-end">
+                            <div class="pagination__list">
+                                <div class="pagination__item current"><a href="#" class="pagination__link">1</a></div>
+                                <div class="pagination__item"><a href="#" class="pagination__link">2</a></div>
+                                <div class="pagination__item pagination__item--more">
+                                    <span class="dot">...</span>
+                                    <span class="line">/</span>
+                                </div>
+                                <div class="pagination__item pagination__item--last"><a href="#" class="pagination__link ">30</a></div>
+                            </div>
+                        </section>
                     </div>
                 </section>
                 
@@ -458,6 +471,13 @@
             }
         }).mount();
 
+    </script>
+    <script>
+        var promoButton = document.querySelector(".form__promo");
+        promoButton.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            promoButton.classList.add("active");
+        });
     </script>
 </body>
 

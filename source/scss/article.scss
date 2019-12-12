@@ -1,5 +1,5 @@
 .article-page {
-    margin-top: 25px;
+    margin-top: 11px;
     @media (max-width: 768px) {
         margin-top: 0;
     }
@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     font-size: 35px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     font-family: $firasans-bold;
     @media (max-width: 768px) {
         font-size: 19px;
@@ -33,6 +33,7 @@
     padding: 20px 37px 25px 27px;
     margin: 0;
     font-size: 15px;
+    line-height: 25px;
     color: $text-dark;
     background-color: #e7eff3;
     border-radius: 12px;
@@ -57,6 +58,7 @@
     margin: 0;
     padding: 0;
     margin-bottom: 25px;
+    line-height: 26px;
     @media (max-width: 768px) {
         margin-bottom: 20px;
     }

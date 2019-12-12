@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/intlTelInput.min.css">
+    <link rel="stylesheet" href="css/first-screen.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <svg style="display:none">
+        <symbol viewBox="0 0 17 17" id="icon-telegram">
+            <svg width="17" height="17"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 24 24"xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path id="telegram-1" d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"/></svg>
+        </symbol>
+        <symbol viewBox="0 0 10 17" id="icon-fb">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 24 24">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                
+        </symbol>
+
+        <symbol viewBox="0 0 20 15" id="icon-vk">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 24 24"><path d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/></svg>
+        </symbol>
+
+        <symbol viewBox="0 0 15 15" id="icon-lock">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 299.995 299.995"><path d="M149.997 161.485c-8.613 0-15.598 6.982-15.598 15.598 0 5.776 3.149 10.807 7.817 13.505v17.341h15.562v-17.341c4.668-2.697 7.817-7.729 7.817-13.505 0-8.616-6.984-15.598-15.598-15.598zM150.003 85.849c-13.111 0-23.775 10.665-23.775 23.775v25.319h47.548v-25.319c-.001-13.108-10.665-23.775-23.773-23.775z"/><path d="M149.995.001C67.156.001 0 67.159 0 149.998c0 82.837 67.156 149.997 149.995 149.997s150-67.161 150-149.997c0-82.839-67.161-149.997-150-149.997zm46.09 227.117h-92.173c-9.734 0-17.626-7.892-17.626-17.629V152.57c0-8.491 6.007-15.582 14.003-17.25v-25.697c0-27.409 22.3-49.711 49.711-49.711 27.409 0 49.709 22.3 49.709 49.711v25.697c7.993 1.673 14 8.759 14 17.25v56.919h.002c0 9.736-7.892 17.629-17.626 17.629z"/></svg>
+        </symbol>
+
+    </svg>
+    <div>
+        <div class="main-wrapper">
+
+                <div class="header-block header-block--index">
+                    <header class="header container">
+                        <input id="hamburger" class="hamburger" type="checkbox"/>
+                        <label class="hamburger" for="hamburger">
+                            <i></i>
+                        </label>
+                        <div class="logo">
+                                <img data-src="img/logo.svg" alt="FastFine" class="lazy logo__img">               
+                        </div>
+                        <div class="header__phone-mobile">  
+                            <a href="tel:880077714758">8 800 777 147 58</a>
+                        </div>
+                        <div class="header__menu-wrapper">
+                                <p class="header__phone-text">Меню</p> 
+                            <nav class="header__menu main-menu">
+                                <ul class="main-menu__list">
+                                    <li class="main-menu__item"><a href="" class="main-menu__link">Услуги</a></li>
+                                    <li class="main-menu__item"><a href="" class="main-menu__link">Отзывы</a></li>
+                                    <li class="main-menu__item"><a href="" class="main-menu__link">Заказать</a></li>
+                                    <li class="main-menu__item"><a href="" class="main-menu__link">Антиплагиат</a></li>
+                                    <li class="main-menu__item"><a href="" class="main-menu__link">Контакты</a></li>
+                                </ul>
+                            </nav>  
+                                <div class="header__phone header__phone--general-page">   
+                                    <a href="tel:880077714758">8 800 777 147 58</a>
+                                </div>
+                            <button class="button button--small header__button"><svg class="button__icon-lock" width="15" height="15">
+                                    <use xlink:href="#icon-lock"></use>
+                                </svg>Войти</button>
+                            <div class="header__social">
+                                <p>Мы в социальных сетях</p>
+                                <ul class="social">
+                                    <li class="social__item social__item--telegram">
+                                        <a href="#" class="social__link">
+                                            <span class="visually-hidden">Telegram</span>
+                                            <svg class="social__icon social__icon--telegram" width="17" height="17">
+                                                <use xlink:href="#icon-telegram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item social__item--vk">
+                                        <a href="" class="social__link">
+                                            <span class="visually-hidden">Vk</span>
+                                            <svg class="social__icon social__icon--vk" width="20" height="15">
+                                                <use xlink:href="#icon-vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item social__item--fb">
+                                        <a href="" class="social__link">
+                                            <span class="visually-hidden">Facebook</span>
+                                            <svg class="social__icon social__icon--fb" width="15" height="17">
+                                                <use xlink:href="#icon-fb"></use>
+                                            </svg>
+                                        </a>
+                                    </li>   
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+                    <section class="container">
+                        <h1>Помощь студентам в написании студенческих работ</h1>
+                        <section class="advantage advantage--small">
+                            <ul class="advantage__list">
+                                <li class="advantage__item advantage__item--personal">
+                                    <p>Только проверенные эксперты</p>
+                                </li>
+                                <li class="advantage__item advantage__item--plagiat">
+                                    <p>Онлайн проверка на антиплагиат</p>
+                                </li>
+                                <li class="advantage__item advantage__item--warranty">
+                                    <p>Гарантия возврата до 60 дней</p>
+                                </li>
+                            </ul>
+                        </section>
+                        <div class="form-section">
+                            <form action="" class="form">
+                                    <h3 class="form__title">Узнайте стоимость работы онлайн</h3>
+                                    <div class="form__wrapper">
+                                       <div class="form__input-wrap">
+                                           <select name="subject" id="" class="form__select">
+                                                <option class="form-option placeholder" selected disabled>Вид работы</option>
+                                            <option value="" class="form__option">Дипломная работа</option>
+                                            <option value="" class="form__option" style="font-size: 12px; color: #434448;">Курсовая работа</option>
+                                            <option value="" class="form__option">Отчет по практике</option>
+                                           </select>
+                                       </div>
+                                    <div class="form__input-whitespace-wrapper">
+                                        <div class="form__input-wrap">
+                                            <select name="subject" id="" class="form__select form__select--volume">
+                                                <option class="form-option placeholder" selected disabled>Объем</option>
+                                                <option value="" class="form__option">1-10</option>
+                                                <option value="" class="form__option" style="font-size: 12px; color: #434448;">11-20</option>
+                                                <option value="" class="form__option">20-80</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__input-wrap form__input-wrap--type">
+                                            <select name="subject" id="" class="form__select form__select--type">
+                                                <option value="" class="form__option">Страниц</option>
+                                                <option value="" class="form__option" >Задач</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                       <div class="form__input-wrap"><input type="text" class="form__input form__autocomplete" placeholder="Предмет" style="color: #030715;"></div>
+                                    </div>
+                                    <div class="form__wrapper form__wrapper--price">
+                                        <p class="form__note">Для индивидуальной оценки нетипичные заказы просьба высылать на <span>Email:
+                                            info@fastfine.ru</span> <a>Подробнее</a>
+                                        </p>
+                                        <p class=" form__note--mobile">Индивидуальная оценка: <span>info@fastfine.ru</span>
+                                        </p>
+                                        <div class="form__price">
+                                            <span>Стоимость <span class="form__hidden">работы</span> от:</span>
+                                            <span class="form__price--value">
+                                                1500 руб.
+                                            </span>
+                                        </div>
+                                        <div class="form__item form__label form__promo">
+                                            <label class="form__item-label form__item-label--promo">Промокод</label>
+                                            <input type="text" class="form__input form__input--promo">
+                                            <p class="form__promo-note">У меня есть промокод</p>
+                                        </div>
+                                    </div>
+                                        <div class="form__wrapper form__wrapper-button"><button class="button button-request form__button">Узнать точную цену</button></div>
+                            </form>
+                        </div>
+                        <section class="advantage advantage--big advantage--page-work lazy" data-bg="url(img/Иллюстрации/women_collage.svg)">
+                            <h2 class="page-title">Преимущества работы с нами</h2>
+                            <ul class="advantage__list">
+                                <li class="advantage__item advantage__item--time">
+                                    <h3 class="advantage__title">Исправления</h3>
+                                    <p>
+                                        Написание студенческих работ на заказ в нашей компании подразумевает бесплатную доработку и исправление в течение
+                                        выбранного вами гарантийного срока.</p>
+                                </li>
+                                <li class="advantage__item advantage__item--like">
+                                    <h3 class="advantage__title">Статистика</h3>
+                                    <p>
+                                    Практически все клиенты остались довольны качеством оказанных услуг и обратились к нам за помощью повторно.</p>
+                                </li>
+                                <li class="advantage__item advantage__item--price">
+                                    <h3 class="advantage__title">Безопасная сделка</h3>
+                                    <p>
+                                    Выполнение студенческих работ нашими специалистами гарантирует вам получение высокой отметки и отсутствие сложностей со
+                                    сдачей преподавателю.</p>
+                                </li>
+                                <li class="advantage__item advantage__item--commission">
+                                    <h3 class="advantage__title">Цена</h3>
+                                    <p>
+                                        Благодаря гибким настройкам калькулятора вы можете получить подходящую конкретно для вас цену. В любом случае вы
+                                        получаете максимальное качество за адекватные деньги.</p>
+                                </li>
+                                <li class="advantage__item advantage__item--autors">
+                                    <h3 class="advantage__title">Авторы</h3>
+                                    <p>
+                                        Все наши авторы – специалисты своего дела, так что вы получаете возможность заказать выполнение студенческой работы у
+                                        настоящих профессионалов.</p>
+                                </li>
+                                <li class="advantage__item advantage__item--chat">
+                                    <h3 class="advantage__title">Сопровождение</h3>
+                                    <p>
+                                        Мы сопровождаем работу в течение выбранного вами гарантийного срока. Все коррективы вносятся оперативно.</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+                </div>
+                <main class="main">
+                    <section class="container services services--index">
+                        <h2 class="page-title">Помощь в написании студенческих работ</h2>
+                        <ul class="services__list">
+                            <li class="services__item card">
+                                <div class="card__wrapper">
+                                    <img data-src="img/icons/book.svg" alt="" width="70" height="70" class="lazy">
+                                    <h2 class="card__title">Курсовая работа</h2>
+                                </div>
+                                <div class="card__text-wrapper">
+                                    <div class="card__text card__text--term">
+                                        <div class="card__wrapper">
+                                            <p class="card__text--img">Сроки выполнения</p>
+                                            <p>от <span class="card__text-important">1 дней</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="card__text">
+                                        <div class="card__wrapper">
+                                            <p>Стоимость работы</p>
+                                            <p class="card__text-color">oт <span class="card__text-important card__text-color">290 рублей</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="button button--size-middle card__button" href="#">Заказать</a>
+                            </li>
+                            <li class="services__item card">
+                                <div class="card__wrapper">
+                                    <img data-src="img/icons/diploma.svg" alt="" width="70" height="70" class="lazy">
+                                    <h2 class="card__title">Дипломная работа</h2>
+                                </div>
+                                <div class="card__text-wrapper">
+                                    <div class="card__text card__text--term">
+                                        <div class="card__wrapper">
+                                            <p class="card__text--img">Сроки выполнения</p>
+                                            <p>от <span class="card__text-important">1 дней</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="card__text">
+                                        <div class="card__wrapper">
+                                            <p>Стоимость работы</p>
+                                            <p class="card__text-color">oт <span class="card__text-important card__text-color">290 рублей</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="button button--size-middle card__button" href="#">Заказать</a>
+                            </li>
+                            <li class="services__item card">
+                                <div class="card__wrapper">
+                                    <img data-src="img/icons/homework.svg" alt="" width="70" height="70" class="lazy">
+                                    <h2 class="card__title">Дипломная работа</h2>
+                                </div>
+                                <div class="card__text-wrapper">
+                                    <div class="card__text card__text--term">
+                                        <div class="card__wrapper">
+                                            <p class="card__text--img">Сроки выполнения</p>
+                                            <p>от <span class="card__text-important">1 дней</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="card__text">
+                                        <div class="card__wrapper">
+                                            <p>Стоимость работы</p>
+                                            <p class="card__text-color">oт <span class="card__text-important card__text-color">290 рублей</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="button button--size-middle card__button" href="#">Заказать</a>
+                            </li>
+                            <li class="services__item card">
+                                <div class="card__wrapper">
+                                    <img data-src="img/icons/book1.svg" alt="" width="70" height="70" class="lazy">
+                                    <h2 class="card__title">Дипломная работа</h2>
+                                </div>
+                                <div class="card__text-wrapper">
+                                    <div class="card__text card__text--term">
+                                        <div class="card__wrapper">
+                                            <p class="card__text--img">Сроки выполнения</p>
+                                            <p>от <span class="card__text-important">1 дней</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="card__text">
+                                        <div class="card__wrapper">
+                                            <p>Стоимость работы</p>
+                                            <p class="card__text-color">oт <span class="card__text-important card__text-color">290 рублей</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="button button--size-middle card__button" href="#">Заказать</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="container popular popular--index">
+                        <div class="popular__wrapper">
+                            <span>А так же:</span>
+                                <ul class="popular__list">
+                                    <li class="popular__item"><a href="" class="popular__link">Отчеты по практике</a></li>
+                                    <li class="popular__item"><a href="" class="popular__link">Онлайн-помощь</a></li>
+                                    <li class="popular__item"><a href="" class="popular__link">Эссе</a></li>
+                                    <li class="popular__item"><a href="" class="popular__link">Билеты к экзамену</a></li>
+                                    <li class="popular__item"><a href="" class="popular__link">Презентация</a></li>
+                                </ul>
+                        </div>
+                        <a href="services.html" class="button button--transparent popular--index__button">Посмотреть все виды работ</a>
+                    </section>
+                    <section class="workflow workflow--index lazy" data-bg="url(img/bg-wave.png)">
+                        <div class="container">
+                            <h3 class="page-title">Как это работает?</h3>
+                            <ul class="workflow__list">
+                                <li class="workflow__item workflow__item--contract">
+                                    <img data-src="img/icons/contract.svg" alt="" class="workflow__icon lazy">
+                                    <div>
+                                        <h4 class="workflow__title">Оформление заявки</h4>
+                                        <p class="workflow__text">
+                                        Вы оформляете заказ по написанию студенческих работ, указываете тему, предмет, прикладываете дополнительную информацию.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="workflow__item workflow__item--down workflow__item--check">
+                                    <img data-src="img/icons/check-list.svg" alt="" class="workflow__icon lazy">
+                                    <div>
+                                        <h4 class="workflow__title">Оплата заказа</h4>
+                                        <p class="workflow__text">
+                                            Вносите за заказ полную оплату или предоплату в размере 50 %.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="workflow__item workflow__item--pay">
+                                    <img data-src="img/icons/profits.svg" alt="" class="workflow__icon lazy">
+                                    <div>
+                                        <h4 class="workflow__title">Заказ в работе</h4>
+                                        <p class="workflow__text">
+                                            После получения оплаты автор немедленно приступает к выполнению вашей работы согласно полученным требованиям.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="workflow__item workflow__item--down workflow__item--time">
+                                    <img data-src="img/icons/gauge.svg" alt="" class="workflow__icon lazy">
+                                    <div>
+                                        <h4 class="workflow__title">Заказ готов</h4>
+                                        <p class="workflow__text">
+                                            После получения оплаты автор немедленно приступает к выполнению вашей работы согласно полученным требованиям.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="container rocket-section">
+                        <h2 class="page-title">Наши гарантии</h2>
+                        <ul class="rocket-section__list list-icons">
+                            <li class="list-icons__item list-icons__item--money-bag">
+                                <h3 class=" list-icons__title">Финансовая защищенность</h3>
+                                <p class="list-icons__text">
+                                На протяжении выбранного вами гарантийного срока вы можете вернуть деньги, если качество написанной работы вас не
+                                устроит или не будет соответствовать требованиям учебного заведения.</p>
+                            </li>
+                            <li class="list-icons__item list-icons__item--specialist">
+                                <h3 class=" list-icons__title">Грамотные специалисты</h3>
+                                <p class="list-icons__text">
+                                Написанием работ занимаются только опытные авторы, которые хорошо знают тонкости учебной дисциплины и имеют практический
+                                опыт в отрасли.</p>
+                            </li>
+                            <li class="list-icons__item list-icons__item--note">
+                                <h3 class="list-icons__title">Контроль качества</h3>
+                                <p class="list-icons__text">
+                                Перед сдачей клиенту, каждая работа проходит тщательную проверку на плагиат по выбранному вами сервису.</p>
+                            </li>
+                            <li class="list-icons__item list-icons__item--registration">
+                                <h3 class="list-icons__title">Конфеденциальность</h3>
+                                <p class="list-icons__text">
+                                    Мы строго храним тайну сотрудничества между агентством по написанию студенческих работ и клиентом.</p>
+                            </li>
+                        </ul>
+                        <picture class="rocket-section__bg-wrap">
+                            <source media="(max-width: 768px)" srcset="img/rocket-bg-small.png">
+                            <img src="img/rocket-bg.png" alt="Ракета" class=" rocket-section__bg">
+                        </picture>
+                        
+
+                    </section>
+                    <section class="video-section">
+                        <h2 class="page-title">Отзывы авторов</h2>
+                        <div class="video-section__wrapper">
+                            <iframe  width="100%" height="365" data-src="https://www.youtube.com/embed/7BITpI0xODQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/7BITpI0xODQ" data-was-processed="true"></iframe>
+                        </div>
+                        <a href="#" class="button button-request--info video-section__button">Узнать стоимость работы за 1 минуту</a>                        
+                    </section>
+                    <section class="reviews-section">
+                        <div class="container reviews-slider--container">
+                            <h2 class="page-title">Отзывы наших клиентов</h2>
+                            <p class="reviews-section__note">Узнайте почему нас выбрали 727 клиентов</p>
+                            <div class="glide glide--reviews">
+                                <div class="glide__track" data-glide-el="track">
+                                    <ul class="reviews__list glide__slides">
+                                        <li class="reviews__item-wrapper glide__slide">
+                                            <div class="reviews__item">
+                                                <div class="reviews__head">
+                                                    <img  src="img/avatar-low.jpg" data-src="img/avatar1.png" alt="Avatar" class="lazy reviews__img">
+                                                    <div class="reviews__head-text">
+                                                        <h3 class="reviews__title">Александра Амосова</h3>
+                                                        <span class="reviews__date">24 октября 2019</span>
+                                                        <div class="reviews__rate">
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star inactive"></div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="reviews__social-link"><span class="visually-hidden">Vk</span>
+                                                    <svg class="social__icon social__icon--vk" width="40" height="40">
+                                                        <use xlink:href="#icon-vk"></use>
+                                                    </svg></a>
+                                                </div>
+                                                <div>
+                                                    <p class="reviews__text">"У меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без Рекомендую! меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без Рекомендую!"</p>
+                                                    <!-- <a href="#">Читать полностью</a> -->
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="reviews__item-wrapper glide__slide">
+                                            <div class="reviews__item">
+                                                <div class="reviews__head">
+                                                    <img src="img/avatar-low.jpg" data-src="img/avatar1.png" alt="Avatar" class="lazy reviews__img">
+                                                    <div class="reviews__head-text">
+                                                        <h3 class="reviews__title">Александра Амосова</h3>
+                                                        <span class="reviews__date">24 октября 2019</span>
+                                                        <div class="reviews__rate">
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star inactive"></div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="reviews__social-link"><span class="visually-hidden">Vk</span>
+                                                    <svg class="social__icon social__icon--vk" width="40" height="40">
+                                                        <use xlink:href="#icon-vk"></use>
+                                                    </svg></a>
+                                                </div>
+                                                <div>
+                                                    <p class="reviews__text">"У меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без Рекомендую! меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без Рекомендую!"</p>
+                                                    <!-- <a href="#">Читать полностью</a> -->
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="reviews__item-wrapper glide__slide">
+                                            <div class="reviews__item">
+                                                <div class="reviews__head">
+                                                    <img src="img/avatar-low.jpg" data-src="img/avatar1.png" alt="Avatar" class="lazy reviews__img">
+                                                    <div class="reviews__head-text">
+                                                        <h3 class="reviews__title">Александра Амосова</h3>
+                                                        <span class="reviews__date">24 октября 2019</span>
+                                                        <div class="reviews__rate">
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star inactive"></div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="reviews__social-link"><span class="visually-hidden">Vk</span>
+                                                    <svg class="social__icon social__icon--vk" width="40" height="40">
+                                                        <use xlink:href="#icon-vk"></use>
+                                                    </svg></a>
+                                                </div>
+                                                <div>
+                                                    <p class="reviews__text">"У меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без Рекомендую! меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без Рекомендую!"</p>
+                                                    <!-- <a href="#">Читать полностью</a> -->
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="reviews__item-wrapper glide__slide">
+                                            <div class="reviews__item">
+                                                <div class="reviews__head">
+                                                    <img src="img/avatar-low.jpg" data-src="img/avatar1.png" alt="Avatar" class="lazy reviews__img">
+                                                    <div class="reviews__head-text">
+                                                        <h3 class="reviews__title">Александра Амосова</h3>
+                                                        <span class="reviews__date">24 октября 2019</span>
+                                                        <div class="reviews__rate">
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star active"></div>
+                                                            <div class="star inactive"></div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="reviews__social-link"><span class="visually-hidden">Vk</span>
+                                                    <svg class="social__icon social__icon--vk" width="40" height="40">
+                                                        <use xlink:href="#icon-vk"></use>
+                                                    </svg></a>
+                                                </div>
+                                                <div>
+                                                    <p class="reviews__text">"У меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без Рекомендую! меня висел долг - контрольная по мат. статистике. Понимая, что не успеваю сделать в срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без ошибок и сдана вовремя. срок, я заказала на этом сайте.
+                                                    Работа выполнена великолепно, без Рекомендую!"</p>
+                                                    <!-- <a href="#">Читать полностью</a> -->
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="glide__arrows" data-glide-el="controls">
+                                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                                </div>
+                            </div>
+                            <section class="pagination pagination--position-end">
+                                <div class="pagination__list">
+                                    <div class="pagination__item current"><a href="#" class="pagination__link">1</a></div>
+                                    <div class="pagination__item"><a href="#" class="pagination__link">2</a></div>
+                                    <div class="pagination__item pagination__item--more">
+                                        <span class="dot">...</span>
+                                        <span class="line">/</span>
+                                    </div>
+                                    <div class="pagination__item pagination__item--last"><a href="#" class="pagination__link ">30</a></div>
+                                    </div>
+                            </section>
+                            <img src="img/slide-group.png" alt="" class="reviews__img-slide">
+                        </div>
+                        
+                    </section>
+                    <section class="salling-info lazy" data-bg="url(img/bg-blue.png)">
+                        <div class="container">
+                            <h3 class="page-title">Профессиональная помощь при написании студенческих работ</h3>
+                            <div class="content">
+                                <img data-src="img/Иллюстрации/girl.svg" alt="" class="lazy salling-info__img">
+                                <p>Специалисты нашей компании окажут своевременную и квалифицированную помощь студентам в написании работ вне зависимости от формы обучения, специальности, учебного заведения и поставленных сроков. Каждый, кто хотя бы однажды пытался искать проверенного исполнителя для выполнения курсовой, дипломной, контрольной или реферата, хорошо знает сложности и возможные риски. Написание студенческих работ – это тяжелый и кропотливый труд, который под силу только опытному специалисту. Если вы привыкли по старинке обмениваться успешно сданными работами со студентами-старшекурсниками или искать помощь среди коллег по ученическому цеху, значит вы еще не знаете о всех возможностях нашего сервиса.</p>
+                                <p>Профессиональное агентство по написанию студенческих работ на заказ имеет безупречную репутацию на рынке услуг. В отличие от традиционных бирж контента, которые являются лишь посредников и гарантом оплаты между заказчиком и исполнителем, мы действительно способны оказать квалифицированную и своевременную помощь. Заказать студенческую работу самостоятельно – значит полагаться лишь на честность и ответственность исполнителя, а это бывает далеко не всегда. Мы работаем по отлаженной схеме, которая позволяет в максимально короткие сроки справляться с любой поставленной задачей.</p>   
+                            </div>
+                        </div>
+                    </section>
+                    <section class="salling-text-section salling-text-section--index lazy" > <div class="container text-section">
+                            <h3 class="page-title">Как мы оказываем помощь в написании студенческих работ
+                            </h3>
+                            <div class="salling-text-section__column">
+                                <p><b>Вам не придется тратить время на самостоятельный поиск автора</b>, ведь за организационные моменты отвечают специалисты
+                                нашего сервиса.
+                                От вас требуется лишь указать вводную информацию – тип работы (дипломная, курсовая, контрольная, реферат), учебное
+                                заведение, предмет, тему, количество страниц и выданное преподавателем задание.</p>
+                                <p><b>Все остальное мы берем на себя</b>. Наши специалисты оперативно подберут надежного исполнителя, который специализируется на
+                                написании работ именно такого типа и именно по вашему предмету. При выполнении будут учтены все нюансы оформления,
+                                предусмотренные в вашем учебном заведении. Вы вносите предоплату или оплачиваете услугу в полном размере и ожидаете,
+                                пока автор пришлет готовый вариант на согласование.</p>
+                            </div>
+                            <div class="salling-text-section--index text-section--second">
+                                <img src="img/Иллюстрации/boy-1.svg" alt="" class="salling-info__img">
+                                <h3 class="page-title">Преимущества заказа работы у нас</h3>
+                            <p>
+                                Приглашаем к выгодному сотрудничеству исполнителей учебных работ по самым разным дисциплинам программ школ,
+                                ССУЗов и
+                                ВУЗов. У нас открыта вакансия для авторов контрольных, курсовых, дипломных работ, рефератов, диссертаций и
+                                других видов
+                                работ.
+                            </p>
+                            <ul>
+                                <li>Бесплатная доработка заказа до момента принятия и получения отметки;</li>
+                                <li>
+                                Качественная проверка работы на антиплагиат с помощью нескольких сервисов;</li>
+                                <li>Удобные варианты оплаты;</li>
+                                <li>Полная конфиденциальность.</li>
+                            </ul>
+                            </div>
+                        </div>
+                    
+                    </section>
+                </main>
+
+            <footer class="footer">
+                <div class="container footer__row">
+                    <div class="footer__col">
+                        <h3 class="footer__title accordeon">Услуги</h3>
+                        <ul class="footer__list panel">
+                            <li>
+                                <a href="">Контрольные работы</a>
+                            </li>
+                            <li>
+                                <a href="predmety.html">Дипломные работы</a>
+                            </li>
+                            <li>
+                                <a href="">Курсовые работы</a>
+                            </li>
+                            <li>
+                                <a href="">Рефераты</a>
+                            </li>
+                            <li>
+                                <a href="">Все услуги</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h3 class="footer__title accordeon">Клиентам</h3>
+                        <ul class="panel">
+                            <li>
+                                <a href="">Вопросы и ответы</a>
+                            </li>
+                            <li>
+                                <a href="oferta.html">Публичная оферта</a>
+                            </li>
+                            <li>
+                                <a href="">Политика конфиденциальности</a>
+                            </li>
+                            <li>
+                                <a href="">О нас</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h3 class="footer__title accordeon">О компании</h3>
+                        <ul class="panel">
+                            <li>
+                                <a href="">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="">Авторам</a>
+                            </li>
+                            <li>
+                                <a href="">Антиплгиат</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <!-- <div class="footer__col-mobile"> -->
+                            <h3 class="footer__title footer__title--desktop-hidden">Наши контакты</h3>
+                            <h3 class="footer__title footer__title--mobile-hidden">Мы в соц сетях</h3>
+                            <ul class="social">
+                                <li class="social__item social__item--telegram">
+                                    <a href="#" class="social__link">
+                                        <span class="visually-hidden">Telegram</span>
+                                        <svg class="social__icon social__icon--telegram" width="17" height="17">
+                                            <use xlink:href="#icon-telegram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item social__item--vk">
+                                    <a href="" class="social__link">
+                                        <span class="visually-hidden">Vk</span>
+                                        <svg class="social__icon social__icon--vk" width="20" height="15">
+                                            <use xlink:href="#icon-vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item social__item--fb">
+                                    <a href="" class="social__link">
+                                        <span class="visually-hidden">Facebook</span>
+                                        <svg class="social__icon social__icon--fb" width="15" height="17">
+                                            <use xlink:href="#icon-fb"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <h3 class="footer__title footer__title--contacts">Контакты</h3>
+                            <a href="tel:" class="footer__phone">8 800 777 147 58</a>
+                            <p class="footer__adress">г.Москва, ул.Садовническая, д.82</p>
+                            <a href="mailto:info@fastfine.ru" class="footer__mail">info@fastfine.ru</a>
+                        <!-- </div> -->
+                        </div>
+                </div>
+                <div class="container footer__row">
+                    <p class="footer__copyright">Copyright 2019 FastFine.ru</p>
+                </div>
+            </footer>
+        </div>
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/lazyload.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        new Glide('.glide--reviews', {
+            type: 'carousel',
+            startAt: 1,
+            perView: 3,
+            gap: 24,
+            breakpoints: {
+                1024: {
+                perView: 2
+                },
+                768: {
+                perView: 2
+                },
+                700: {
+                perView: 1
+                }
+            }
+            }).mount();
+            
+    </script>
+    <script>
+    var promoButton = document.querySelector(".form__promo");
+    promoButton.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        promoButton.classList.add("active");
+    });
+    </script>
+</body>
+</html>
+

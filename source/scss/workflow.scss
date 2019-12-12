@@ -7,6 +7,13 @@
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: auto;
+     @media (max-width: 768px) {
+         background-position: center;
+     }
+}
+
+.workflow.workflow--index {
+    padding-bottom: 0;
 }
 
 .workflow--index .container {

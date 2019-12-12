@@ -23,8 +23,10 @@
     background-size: 56%;
     @media (max-width: 768px) {
         background-image: none;
-        padding: 0 15px;
+        padding: 0;
         align-items: center;
+        background-size: 0;
+        padding-bottom: 30px;
     }
 }
 
@@ -33,12 +35,17 @@
     text-align: center;
     padding-top: 50px;
     margin-bottom: 85px;
+    @media (max-width: 768px) {
+        padding-top: 30px;
+        margin-bottom: 24px;
+    }
 }
 
 .advantage--big .page-title {
     text-align: center;
     padding-top: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
+    margin-top: 15px;
 }
 
 .advantage--big.advantage--page-work {
@@ -84,9 +91,10 @@
 
 .advantage--big .advantage__item {
     width: 49%;
-    margin-bottom: 42px;
+    margin-bottom: 27px;
     @media (max-width: 768px) {
         width: 100%;
+        margin-bottom: 12px;
     }
 }
 
@@ -109,7 +117,7 @@
         padding: 0;
     }
     @media (max-width: 768px) {
-        padding-left: 52px;
+        padding-left: 45px;
     }
 }
 
